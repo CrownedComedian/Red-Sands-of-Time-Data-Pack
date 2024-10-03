@@ -1,8 +1,8 @@
 # Red Sands of Time
 
-This is a Minecraft datapack inspired by Minecraft Championship's [Sands of Time](https://mcchampionship.com/pages/sands-of-time/) minigame.  
+This is a Minecraft data pack inspired by MC Championship's [Sands of Time](https://mcchampionship.com/pages/sands-of-time/) minigame.  
 *Disclaimer: I am not affiliated with Noxcrew.  
-I just wanted to my own version of the game for my own enjoyment.*  
+I just wanted my own version of the game for my own enjoyment.*  
 
 ![](images/start.png)
 
@@ -11,7 +11,7 @@ I just wanted to my own version of the game for my own enjoyment.*
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
     - [Configure server.properties](#configure-serverproperties)
-    - [One Time Set Up](#one-time-set-up)
+    - [One Time Setup](#one-time-setup)
   - [How to Operate](#how-to-operate)
   - [How to Play](#how-to-play)
   - [Bug Reporting](#bug-reporting)
@@ -40,16 +40,16 @@ resource-pack=https\://github.com/CrownedComedian/Red-Sands-of-Time-Resource-Pac
 Once installed, you'll have to do some one-time setup (see below) after starting and joining your server.  
 
 
-### One Time Set Up
+### One Time Setup
 
-Now with the datapack installed and your server running, join your server and execute the following commands:  
+Now with the data pack installed and your server running, join your server and execute the following commands:  
 ```/execute in rsot:liminal_space run tp @s ~ ~ ~```  
 ```/locate structure rsot:liminal_space```  
 Click on the coordinates to copy the command to teleport you to the location where this structure generated and execute the teleport command.  
 If no structure was found, run:  
 ```/place structure rsot:liminal_space```  
 This structure consists of 10 tents, a scoreboard structure, and a cage structure.  
-Make sure all sub structures listed have generated (see image below).  
+Make sure all sub structures listed have been generated (see image below).  
 Finally, press the big install button in front of the scoreboard structure!  
 I recommend copying some coordinates near the campfire with ```F3```+```C``` for new players to join.  
 
@@ -71,7 +71,7 @@ Reveals teams' banked scores.
 Execute this command when all players have returned to ```rsot:liminal_space```.  
 
 The game does not automatically end (for now).  
-Some gamerules are set when the datapack is loaded in.  
+Some gamerules are set when the data pack is loaded in.  
 These can be found in ```data > rsot > function > gamerules.mcfunction```  
 Video tutorial coming soon!
 
@@ -87,10 +87,10 @@ There will be a 60 second pre-game grace period for team members to discuss thei
 After the countdown, players traverse through the eleven paths in search for red sand, lapis lazuli, and other resources in decorated pots.  
 The gamemode is set to adventure, so players must use anything but their fist to break decorated pots and collect red sand.  
 
-*Lapis lazuli can be found sprinkled on the ground, as loot mined by monster spawners, a reward for ignighting candles, and locked behind treasure vaults.*  
-Treasure vaults can be unlocked with color-matching keys found seperatly in the paths of the tomb.  
+*Lapis lazuli can be found sprinkled on the ground, as loot mined by monster spawners, a reward for igniting candles, and locked behind treasure vaults.*  
+Treasure vaults can be unlocked with color-matching keys found separately in the paths of the tomb.  
 
-*A team's score is the collective total of all lapis lazuli banked by payers of that team.*  
+*A team's score is the collective total of all lapis lazuli banked by players of that team.*  
 To bank lapis lazuli, players must escape the tomb before their timer runs out through the exit portal located in the hub of the tomb across the spawn platform.  
 *This is the only way out of the tomb and the only way to bank your score!*  
 Once a player exits the tomb they cannot return.  
@@ -107,8 +107,8 @@ Be sure to exit the tomb before time runs out.
 
 If a player dies mid-game, they drop all collected loot, including 80% of their lapis lazuli.  
 *The remaining 20% is lost forever.*  
-Players will respawn in a cell near the spawnpoint of the hub.  
-A teammate is required to sacrafice one red sand block to free the player.  
+Players will respawn in a cell near the spawn point of the hub.  
+A teammate is required to sacrifice one red sand block to free the player.  
 
 During the game, information about opposing teams is very limited.  
 Scores are revealed only once all teams have expired their sand timers or escaped their tomb via the exit.  
@@ -123,7 +123,7 @@ Do your best, have fun, and don't get sealed in!
 In the unlikely event of a buggy tomb generation, submit an issue here on GitHub.  
 Please include the following:
 - Full world seed (can be obtained with ```/seed```)  
-- Exact x & z coordinates of tomb center (should be the corner of a chunk.  Or use ```/data get storage rsot:generation location```)  
+- Exact x & z coordinates of the tomb center (should be the corner of a chunk.  Or use ```/data get storage rsot:generation location```)  
 - Which destinations are selected including their depth scores (can be obtained with ```/function rsot:tellraw/depths```)  
 - Which path is broken (exit portal is twelve o'clock and the path below spawn is six o'clock)  
 
