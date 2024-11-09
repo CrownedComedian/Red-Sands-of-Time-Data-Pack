@@ -72,5 +72,5 @@ kill @n[type=item,distance=..10]
 
 tellraw @p "Red Sands of Time has been installed!"
 tellraw @p "The game state defaults to 'open' allowing players to ready up in their tents"
-tellraw @p [{"text":"To begin the game, run "},{"keybind":"[/function rsot:game/start]","color":"green","clickEvent":{"action":"suggest_command","value":"/function rsot:game/start"},"hoverEvent":{"action":"show_text","value":"Click to copy command"}}]
-tellraw @p [{"text":"To start a new round at the end of the game, run "},{"keybind":"[/function rsot:game/open]","color":"green","clickEvent":{"action":"suggest_command","value":"/function rsot:game/open"},"hoverEvent":{"action":"show_text","value":"Click to copy command"}}]
+tellraw @p [{"text":"To begin the game, run "},{"keybind":"[/function rsot:admin/start]","color":"green","clickEvent":{"action":"suggest_command","value":"/function rsot:admin/start"},"hoverEvent":{"action":"show_text","value":"Click to copy command"}}]
+tellraw @p [{"text":"To start a new round at the end of the game, run "},{"keybind":"[/function rsot:admin/open]","color":"green","clickEvent":{"action":"suggest_command","value":"/function rsot:admin/open"},"hoverEvent":{"action":"show_text","value":"Click to copy command"}}]
