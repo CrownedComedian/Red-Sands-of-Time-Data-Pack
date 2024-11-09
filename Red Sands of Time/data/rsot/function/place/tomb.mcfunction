@@ -1,0 +1,1 @@
+$execute at @r[team=$(dimension)] run place structure rsot:tomb $(x) 62 $(z)

@@ -1,0 +1,96 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_can_break"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_unbreakable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_can_break"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_unbreakable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_can_break"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_unbreakable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_can_break"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_unbreakable"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

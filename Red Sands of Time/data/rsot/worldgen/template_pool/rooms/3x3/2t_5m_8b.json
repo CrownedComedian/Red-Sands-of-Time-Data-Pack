@@ -1,0 +1,15 @@
+{
+  "name": "rsot:rooms/3x3/2t_5m_8b",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:rooms/3x3/2t_5m_8b_spire",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

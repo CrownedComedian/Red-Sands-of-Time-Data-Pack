@@ -1,0 +1,9 @@
+{
+  "asset_name": "blue_bats",
+  "description": {
+    "text": "Blue Bats team trim",
+    "color": "blue"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776808
+}

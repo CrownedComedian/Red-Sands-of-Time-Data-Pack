@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "rsot:endless_desert",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "rsot:endless_desert"
+    }
+  }
+}

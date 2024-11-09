@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "rsot:endless_desert",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "start_height": {
+    "absolute": 0
+  },
+  "start_pool": "rsot:liminal_space/campfire",
+  "size": 20,
+  "start_jigsaw_name": "rsot:anchor",
+  "max_distance_from_center": 116,
+  "use_expansion_hack": false
+}

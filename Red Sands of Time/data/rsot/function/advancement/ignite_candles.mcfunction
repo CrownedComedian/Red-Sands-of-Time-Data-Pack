@@ -1,0 +1,1 @@
+advancement revoke @s through rsot:custom/ignite_blue_candles

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_chestplate"
+    },
+    "title": "Chestplate I",
+    "description": "Acquire a golden chestplate",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "rsot:custom/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:golden_chestplate"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rsot:advancement/acquire_golden_chestplate"
+  },
+  "sends_telemetry_event": false
+}

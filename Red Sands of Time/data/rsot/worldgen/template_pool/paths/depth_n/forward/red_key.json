@@ -1,0 +1,51 @@
+{
+  "name": "rsot:paths/depth_n/forward/red_key",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/forward_1",
+        "processors": "rsot:red_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/forward_2",
+        "processors": "rsot:red_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/forward_3",
+        "processors": "rsot:red_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/forward_4",
+        "processors": "rsot:red_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/forward_5",
+        "processors": "rsot:red_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

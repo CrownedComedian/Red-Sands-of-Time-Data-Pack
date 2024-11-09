@@ -1,0 +1,9 @@
+{
+  "asset_name": "aqua_axolotls",
+  "description": {
+    "text": "Aqua Axolotls team trim",
+    "color": "aqua"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776807
+}

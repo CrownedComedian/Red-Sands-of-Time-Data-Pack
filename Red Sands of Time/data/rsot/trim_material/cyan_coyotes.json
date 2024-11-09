@@ -1,0 +1,9 @@
+{
+  "asset_name": "cyan_coyotes",
+  "description": {
+    "text": "Cyan Coyotes team trim",
+    "color": "dark_aqua"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776806
+}

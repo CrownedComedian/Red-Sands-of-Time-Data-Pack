@@ -1,0 +1,9 @@
+{
+  "asset_name": "pink_parrots",
+  "description": {
+    "text": "Pink Parrots team trim",
+    "color": "light_purple"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776810
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rsot:rooms/4x5/8bmt_17bmt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/4x5/8bmt_17bmt_broken_path",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "rsot:rooms/5x5/3bm_13bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:rooms/5x5/3bm_8bm_13mt_18bm_quad_spaners_atrium",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/5x5/13mt_quad_spaners_atrium",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/5x5/3bm_quad_spaners_atrium",
+            "processors": "minecraft:empty"
+          }
+        ]
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:rooms/5x5/3bm_8bm_13bm_18bm_skeleton_pedistal",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/5x5/8bm_18bm_skeleton_pedistal",
+            "processors": "minecraft:empty"
+          }
+        ]
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/5x5/3bmt_13bmt_zombie_hall",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

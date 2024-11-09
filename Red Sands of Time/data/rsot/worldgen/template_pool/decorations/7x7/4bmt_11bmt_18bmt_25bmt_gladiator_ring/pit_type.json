@@ -1,0 +1,24 @@
+{
+  "name": "rsot:decorations/7x7/4bmt_11bmt_18bmt_25bmt_gladiator_ring/pit_type",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/7x7/4bmt_11bmt_18bmt_25bmt_gladiator_ring/duel_ravagers",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/7x7/4bmt_11bmt_18bmt_25bmt_gladiator_ring/monster_pit",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

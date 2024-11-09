@@ -1,0 +1,15 @@
+{
+  "name": "rsot:rooms/2x3/10bmt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/2x3/10bmt_sarcophagus",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

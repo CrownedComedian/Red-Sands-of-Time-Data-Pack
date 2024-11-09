@@ -1,0 +1,33 @@
+{
+  "name": "rsot:rooms/1x1/1mt_3bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/1x1/1mt_3bm_catacomb",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/1x1/1mt_3bm_crevice",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/1x1/1mt_3bm_tunnel",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

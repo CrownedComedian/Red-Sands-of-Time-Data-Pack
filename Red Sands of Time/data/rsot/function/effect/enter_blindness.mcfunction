@@ -1,0 +1,1 @@
+effect give @a[nbt={Dimension:"rsot:liminal_space"}] minecraft:blindness infinite 5 true

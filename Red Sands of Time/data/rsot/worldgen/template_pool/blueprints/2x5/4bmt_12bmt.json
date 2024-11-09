@@ -1,0 +1,33 @@
+{
+  "name": "rsot:blueprints/2x5/4bmt_12bmt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 7,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/2x5/4bmt_12bmt",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/2x4/4bmt_10bmt",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/2x2/3bmt_7bmt_catacombs_1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

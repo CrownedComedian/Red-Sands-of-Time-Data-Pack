@@ -1,0 +1,9 @@
+# Personal helper function during the creation of rsot, not actually run during the game.
+
+execute align xyz run summon minecraft:item_display ~0.5 ~0.02 ~0.5 {item:{id:"minecraft:lapis_lazuli",Count:1},transformation:{translation:[0f,0f,0f],right_rotation:{angle:1.571,axis:[1f,0f,0f]},scale:[0.6f,0.6f,0.6f],left_rotation:{angle:1,axis:[0f,1f,0f]}}}
+execute align xyz run summon minecraft:item_display ~0.5 ~0.04 ~0.5 {item:{id:"minecraft:lapis_lazuli",Count:1},transformation:{translation:[0f,0f,0f],right_rotation:{angle:1.571,axis:[1f,0f,0f]},scale:[0.6f,0.6f,0.6f],left_rotation:{angle:2,axis:[0f,1f,0f]}}}
+execute align xyz run summon minecraft:item_display ~0.5 ~0.06 ~0.5 {item:{id:"minecraft:lapis_lazuli",Count:1},transformation:{translation:[0f,0f,0f],right_rotation:{angle:1.571,axis:[1f,0f,0f]},scale:[0.6f,0.6f,0.6f],left_rotation:{angle:4,axis:[0f,1f,0f]}}}
+execute align xyz run summon minecraft:item_display ~0.5 ~0.08 ~0.5 {item:{id:"minecraft:lapis_lazuli",Count:1},transformation:{translation:[0f,0f,0f],right_rotation:{angle:1.571,axis:[1f,0f,0f]},scale:[0.6f,0.6f,0.6f],left_rotation:{angle:6,axis:[0f,1f,0f]}}}
+execute align xyz run summon minecraft:item_display ~0.5 ~0.10 ~0.5 {item:{id:"minecraft:lapis_lazuli",Count:1},transformation:{translation:[0f,0f,0f],right_rotation:{angle:1.571,axis:[1f,0f,0f]},scale:[0.6f,0.6f,0.6f],left_rotation:{angle:7,axis:[0f,1f,0f]}}}
+execute align xyz run summon minecraft:item_display ~0.5 ~0.12 ~0.5 {item:{id:"minecraft:lapis_lazuli",Count:1},transformation:{translation:[0f,0f,0f],right_rotation:{angle:1.571,axis:[1f,0f,0f]},scale:[0.6f,0.6f,0.6f],left_rotation:{angle:3,axis:[0f,1f,0f]}}}
+execute align xyz run summon minecraft:item_display ~0.5 ~0.14 ~0.5 {item:{id:"minecraft:lapis_lazuli",Count:1},transformation:{translation:[0f,0f,0f],right_rotation:{angle:1.571,axis:[1f,0f,0f]},scale:[0.6f,0.6f,0.6f],left_rotation:{angle:5,axis:[0f,1f,0f]}}}

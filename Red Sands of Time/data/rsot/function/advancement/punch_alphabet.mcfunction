@@ -1,0 +1,1 @@
+advancement revoke @s only rsot:custom/punch_alphabet

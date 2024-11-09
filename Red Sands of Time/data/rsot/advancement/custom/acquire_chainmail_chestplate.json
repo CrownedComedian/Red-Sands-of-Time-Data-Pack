@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:chainmail_chestplate"
+    },
+    "title": "Chestplate II",
+    "description": "Acquire a chainmail chestplate",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "rsot:custom/acquire_golden_chestplate",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:chainmail_chestplate"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rsot:advancement/acquire_chainmail_chestplate"
+  },
+  "sends_telemetry_event": false
+}

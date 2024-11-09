@@ -1,0 +1,404 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "red_rabbits"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "red_rabbits"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:orange_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "orange_ocelots"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "orange_ocelots"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "yellow_yaks"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "yellow_yaks"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "lime_llamas"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "lime_llamas"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:green_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "green_geckos"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "green_geckos"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cyan_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "cyan_coyotes"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "cyan_coyotes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_blue_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "aqua_axolotls"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "aqua_axolotls"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blue_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "blue_bats"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "blue_bats"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "purple_pandas"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "purple_pandas"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pink_carpet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:secretly_vanish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:tomb_adventure_friendly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rsot": {
+                    "team_data": {
+                      "team": "pink_parrots"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "pink_parrots"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

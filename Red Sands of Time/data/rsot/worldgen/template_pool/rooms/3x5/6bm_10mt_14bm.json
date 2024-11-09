@@ -1,0 +1,27 @@
+{
+  "name": "rsot:rooms/3x5/6bm_10mt_14bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:rooms/3x5/2mt_6bm_10mt_14bm_crossing_paths",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/3x5/2mt_crossing_paths",
+            "processors": "minecraft:empty"
+          }
+        ]
+      }
+    }
+  ]
+}

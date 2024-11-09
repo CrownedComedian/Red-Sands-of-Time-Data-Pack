@@ -1,0 +1,24 @@
+{
+  "name": "rsot:blueprints/3x5/6bm_10mt_14bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x5/6bm_10mt_14bm",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x5/6bm_10mt_14bm_3x4_room_cut",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

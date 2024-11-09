@@ -1,0 +1,27 @@
+{
+  "name": "rsot:blueprints/5x5/8bm_13mt_18bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:rooms/5x5/3bm_8bm_13mt_18bm_quad_spaners_atrium",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/5x5/3bm_quad_spaners_atrium",
+            "processors": "minecraft:empty"
+          }
+        ]
+      }
+    }
+  ]
+}

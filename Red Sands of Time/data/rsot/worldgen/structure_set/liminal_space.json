@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "rsot:liminal_space",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "salt": 1488590359,
+    "frequency_reduction_method": "default",
+    "distance": 1023,
+    "spread": 1023,
+    "count": 1,
+    "preferred_biomes": "rsot:endless_desert"
+  }
+}

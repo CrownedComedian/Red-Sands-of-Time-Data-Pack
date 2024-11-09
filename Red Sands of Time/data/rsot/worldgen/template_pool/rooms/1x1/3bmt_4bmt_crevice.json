@@ -1,0 +1,15 @@
+{
+  "name": "rsot:rooms/1x1/3bmt_4bmt_crevice",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/1x1/3bmt_4bmt_crevice",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

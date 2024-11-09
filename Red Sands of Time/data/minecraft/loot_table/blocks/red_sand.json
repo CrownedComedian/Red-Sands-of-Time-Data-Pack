@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_sand",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:can_break": {
+                  "predicates": [
+                    {
+                      "blocks": "#rsot:breakable"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "minecraft:can_place_on": {
+                  "blocks": "minecraft:composter"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/red_sand"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rsot:rooms/2x2/5bmt_8bmt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/2x2/5bmt_8bmt_curve",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

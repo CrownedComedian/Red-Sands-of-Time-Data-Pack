@@ -1,0 +1,24 @@
+{
+  "parent": "rsot:custom/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#minecraft:wool_carpets"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rsot:advancement/place_carpet",
+    "loot": [
+      "rsot:team_carpet"
+    ]
+  }
+}

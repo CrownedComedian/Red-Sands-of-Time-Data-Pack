@@ -1,0 +1,15 @@
+{
+  "name": "rsot:liminal_space/team_tents/blue_bats",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:liminal_space/team_tents/blue_bats",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "yellow_yaks",
+  "description": {
+    "text": "Yellow Yaks team trim",
+    "color": "yellow"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776803
+}

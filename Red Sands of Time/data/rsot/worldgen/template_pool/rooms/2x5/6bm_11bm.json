@@ -1,0 +1,15 @@
+{
+  "name": "rsot:rooms/2x5/6bm_11bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/2x5/6bm_11bm_creeper_stairs",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+$tellraw @s [{"text":"$(path_type): "},{"score":{"name":"#$(path_type)","objective":"depth"}}]

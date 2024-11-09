@@ -1,0 +1,24 @@
+{
+  "name": "rsot:blueprints/2x2/4bmt_8bmt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/2x2/4bmt_7bmt_catacombs",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/2x2/4bmt_7bmt_crevices",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

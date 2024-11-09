@@ -1,0 +1,1 @@
+function rsot:place/tomb with storage rsot:generation location

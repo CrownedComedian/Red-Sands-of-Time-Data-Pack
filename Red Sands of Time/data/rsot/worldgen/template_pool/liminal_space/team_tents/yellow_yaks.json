@@ -1,0 +1,15 @@
+{
+  "name": "rsot:liminal_space/team_tents/yellow_yaks",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:liminal_space/team_tents/yellow_yaks",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

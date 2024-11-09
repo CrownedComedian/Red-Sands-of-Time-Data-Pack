@@ -1,0 +1,9 @@
+{
+  "asset_name": "lime_llamas",
+  "description": {
+    "text": "Lime Llamas team trim",
+    "color": "green"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776804
+}

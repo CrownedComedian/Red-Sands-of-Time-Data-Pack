@@ -1,0 +1,33 @@
+{
+  "name": "rsot:decorations/potential_interest",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/4_candles",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 20
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/4_blue_candles",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/empty",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 11
+    }
+  ]
+}

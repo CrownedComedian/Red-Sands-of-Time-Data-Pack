@@ -1,0 +1,9 @@
+{
+  "asset_name": "orange_ocelots",
+  "description": {
+    "text": "Orange Ocelots team trim",
+    "color": "gold"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776802
+}

@@ -1,0 +1,1 @@
+playsound minecraft:block.chain.break master @s ~ ~ ~ 1.0 1.0 1.0

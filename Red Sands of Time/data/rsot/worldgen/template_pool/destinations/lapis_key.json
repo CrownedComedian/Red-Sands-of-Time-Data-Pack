@@ -1,0 +1,15 @@
+{
+  "name": "rsot:destinations/lapis_key",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:rooms/keys/lapis_chain_parkour",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_boots"
+    },
+    "title": "Feetwear I",
+    "description": "Acquire golden boots",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "rsot:custom/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:golden_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rsot:advancement/acquire_golden_boots"
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,33 @@
+{
+  "name": "rsot:blueprints/3x5/2m_10m_14b",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x5/2mt_10mt_14bm",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x5/2mt_10mt_14bm_3x3_dual_stairs_cut",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x5/2mt_10mt_14bm_3x3_cut",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

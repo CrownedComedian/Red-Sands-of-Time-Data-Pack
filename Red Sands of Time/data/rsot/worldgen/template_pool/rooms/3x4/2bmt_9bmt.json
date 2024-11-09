@@ -1,0 +1,15 @@
+{
+  "name": "rsot:rooms/3x4/2bmt_9bmt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/3x4/2bmt_9bmt_pool_divider",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

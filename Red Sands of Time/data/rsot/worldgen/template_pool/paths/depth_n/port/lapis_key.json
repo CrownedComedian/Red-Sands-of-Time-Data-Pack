@@ -1,0 +1,51 @@
+{
+  "name": "rsot:paths/depth_n/port/lapis_key",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/port_1",
+        "processors": "rsot:lapis_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/port_2",
+        "processors": "rsot:lapis_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/port_3",
+        "processors": "rsot:lapis_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/port_4",
+        "processors": "rsot:lapis_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:paths/depth_n/port_5",
+        "processors": "rsot:lapis_key_path",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

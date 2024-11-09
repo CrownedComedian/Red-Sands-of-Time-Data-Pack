@@ -1,0 +1,15 @@
+{
+  "name": "rsot:destinations/red_key",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:rooms/keys/red_3_word_puzzle",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

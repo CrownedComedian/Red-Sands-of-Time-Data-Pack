@@ -1,0 +1,24 @@
+{
+  "name": "rsot:rooms/2x7/8bm_17bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/2x7/8bm_17bm_flower_pot_chamber",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/2x7/8bm_17bm_dual_statues",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

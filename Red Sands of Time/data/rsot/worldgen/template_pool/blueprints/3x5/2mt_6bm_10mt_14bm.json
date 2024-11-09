@@ -1,0 +1,15 @@
+{
+  "name": "rsot:blueprints/3x5/2mt_6bm_10mt_14bm",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x5/2mt_6bm_10mt_14bm",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

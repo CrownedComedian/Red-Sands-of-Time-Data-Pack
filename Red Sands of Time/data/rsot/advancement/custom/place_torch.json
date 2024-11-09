@@ -1,0 +1,21 @@
+{
+  "parent": "rsot:custom/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:torch",
+            "properties": {}
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rsot:advancement/place_torch"
+  },
+  "sends_telemetry_event": false
+}

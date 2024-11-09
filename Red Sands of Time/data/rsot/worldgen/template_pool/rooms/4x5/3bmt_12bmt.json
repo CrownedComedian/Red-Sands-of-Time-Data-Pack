@@ -1,0 +1,24 @@
+{
+  "name": "rsot:rooms/4x5/3bmt_12bmt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/4x5/3bmt_12bmt_poison_arrow_hall",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/4x5/3bmt_12bmt_closets",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

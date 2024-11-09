@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    
+    "minecraft:red_sand",
+    "minecraft:decorated_pot",
+
+    "minecraft:spawner",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:cobweb",
+
+    "#minecraft:wool_carpets"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rsot:decorations/7x7/4bmt_11bmt_18bmt_25bmt_gladiator_ring/ceiling_type",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/7x7/4bmt_11bmt_18bmt_25bmt_gladiator_ring/dripstone_ceiling",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "rsot:blueprints/3x7/2t_12m",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x7/2mt_12bm_3x3_sandwich",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/3x7/2t_12m_3x3_stairs_at_end",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

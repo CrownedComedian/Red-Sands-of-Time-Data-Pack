@@ -1,0 +1,10 @@
+execute at @r[team=red_rabbits] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=orange_ocelots] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=yellow_yaks] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=lime_llamas] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=green_geckos] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=aqua_axolotls] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=cyan_coyotes] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=blue_bats] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=purple_pandas] run function rsot:place/tombs with storage rsot:generation location
+execute at @r[team=pink_parrots] run function rsot:place/tombs with storage rsot:generation location

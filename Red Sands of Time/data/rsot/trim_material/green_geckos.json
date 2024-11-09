@@ -1,0 +1,9 @@
+{
+  "asset_name": "green_geckos",
+  "description": {
+    "text": "Green Geckos team trim",
+    "color": "dark_green"
+  },
+  "ingredient": "minecraft:light",
+  "item_model_index": 0.776805
+}
