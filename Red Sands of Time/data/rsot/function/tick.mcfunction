@@ -1,6 +1,6 @@
 # Regen cooldown
 scoreboard players remove #RegenCooldown time_remaining 1
-execute if score #RegenCooldown time_remaining matches 0 run effect give @a minecraft:regeneration 1 2 true
+execute if score #RegenCooldown time_remaining matches 0 run effect give @a[predicate=rsot:in_rsot_dimension] minecraft:regeneration 1 2 true
 execute if score #RegenCooldown time_remaining matches 0 run scoreboard players set #RegenCooldown time_remaining 60
 
 # Lapis pickup cooldown
