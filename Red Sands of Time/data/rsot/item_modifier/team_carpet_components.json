@@ -1,0 +1,23 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "rsot:secretly_vanish"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "rsot:tomb_adventure_can_break"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:can_place_on": {
+        "predicates": [
+          {
+            "blocks": "#rsot:carpet_placeable"
+          }
+        ],
+        "show_in_tooltip": false
+      }
+    }
+  }
+]

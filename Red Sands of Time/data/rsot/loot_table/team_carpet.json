@@ -9,11 +9,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -49,11 +45,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -89,11 +81,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -129,11 +117,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -169,11 +153,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -209,11 +189,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -249,11 +225,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -289,11 +261,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -329,11 +297,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",
@@ -369,11 +333,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_friendly"
+              "name": "rsot:team_carpet_components"
             },
             {
               "function": "minecraft:set_components",

@@ -30,7 +30,7 @@
                 "minecraft:can_place_on": {
                   "predicates": [
                     {
-                      "blocks": "#rsot:placeable"
+                      "blocks": "#rsot:torch_placeable"
                     }
                   ],
                   "show_in_tooltip": false

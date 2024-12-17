@@ -1,0 +1,45 @@
+{
+  "values": [    
+    "minecraft:magma_block",
+
+    "minecraft:brown_mushroom_block",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+
+    "minecraft:spawner",
+
+    "minecraft:tuff",
+
+    "minecraft:quartz_block",
+    "minecraft:quartz_bricks",
+    "minecraft:quartz_slab",
+    "minecraft:quartz_stairs",
+    "minecraft:quartz_pillar",
+    "minecraft:smooth_quartz",
+    "minecraft:smooth_quartz_slab",
+    "minecraft:smooth_quartz_stairs",
+
+    "minecraft:torch",
+    "minecraft:wall_torch",
+
+    "minecraft:packed_mud",
+    "minecraft:mud_bricks",
+    "minecraft:mud_brick_slab",
+    "minecraft:mud_brick_stairs",
+
+    "minecraft:deepslate_brick_slab",
+    "minecraft:deepslate_brick_stairs",
+    "minecraft:deepslate_brick_wall",
+    "minecraft:deepslate_bricks",
+
+    "minecraft:mangrove_log",
+    "minecraft:stripped_mangrove_log",
+
+    "minecraft:red_sandstone",
+    "minecraft:cut_red_sandstone",
+    "minecraft:chiseled_red_sandstone",
+
+    "#minecraft:terracotta",
+    "#minecraft:wool_carpets"
+  ]
+}
