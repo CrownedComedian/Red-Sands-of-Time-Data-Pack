@@ -8,14 +8,10 @@
           "name": "minecraft:trial_key",
           "functions": [
             {
-              "function": "minecraft:set_custom_model_data",
-              "value": 776802
-            },
-            {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Yellow vault key",
-                "color": "yellow",
+                "text": "Lapis vault key",
+                "color": "blue",
                 "bold": true,
                 "italic": false
               }
@@ -23,6 +19,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_model": "rsot:lapis_key",
                 "minecraft:can_break": {
                   "predicates": [
                     {
