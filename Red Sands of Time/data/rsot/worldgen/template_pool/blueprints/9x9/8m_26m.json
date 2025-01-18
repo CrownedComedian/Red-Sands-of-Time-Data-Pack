@@ -10,6 +10,15 @@
         "location": "rsot:blueprints/9x9/8m_26m_long_ending",
         "processors": "minecraft:empty"
       }
+    },
+    {
+      "weight": 90,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/9x9/8m_26m_zig_zag_path",
+        "processors": "minecraft:empty"
+      }
     }
   ]
 }
