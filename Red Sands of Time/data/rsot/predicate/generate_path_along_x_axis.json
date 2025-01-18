@@ -1,0 +1,27 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:repeating_command_block",
+          "state": {
+            "facing": "east"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:repeating_command_block",
+          "state": {
+            "facing": "west"
+          }
+        }
+      }
+    }
+  ]
+}

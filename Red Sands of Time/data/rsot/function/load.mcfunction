@@ -63,8 +63,12 @@ scoreboard objectives modify pink_parrots numberformat styled {"color":"white"}
 bossbar add rsot:pregame {"text":"pregame"}
 bossbar set rsot:pregame max 60
 
-# Scoreboard value used on markers when generating paths
+# Scoreboard values used on markers when generating paths
 scoreboard objectives add depth dummy
+scoreboard objectives add x dummy
+scoreboard objectives add z dummy
+scoreboard players set #16 x 16
+scoreboard players set #16 z 16
 
 # Scoreboard values used for gameplay
 scoreboard objectives add time_remaining dummy
