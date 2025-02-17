@@ -1,8 +1,11 @@
+# Do not run if not active
+$execute positioned ^$(x) ^$(y) ^$(z) unless entity @n[type=minecraft:marker,distance=0..1,tag=generate_with_hub] if data storage rsot:generation {activated:false} run return 0
+
 # Do not run if previous block is not a path block
 $execute unless block ^$(x) ^$(y) ^$(z) #rsot:paths run return 0
 
 # tp marker to here
-$execute summon minecraft:marker positioned ^$(x) ^$(y) ^$(z) run tp @n[type=minecraft:marker] @s
+$execute summon minecraft:marker positioned ^$(x) ^$(y) ^$(z) run tp @n[type=minecraft:marker,distance=0..3] @s
 kill @n[type=minecraft:marker,tag=!rsot_path]
 
 # Check for chunk edge

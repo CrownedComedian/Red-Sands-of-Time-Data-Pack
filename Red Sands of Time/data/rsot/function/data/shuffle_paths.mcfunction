@@ -61,3 +61,18 @@ data modify storage rsot:generation paths[8].heading set value "port"
 data modify storage rsot:generation paths[9].heading set value "forward"
 data modify storage rsot:generation paths[10].heading set value "starboard"
 data modify storage rsot:generation paths[11].heading set value "port"
+
+# Add ignore flags
+# This allows only the two visible paths from the hub spawn platform 
+# to generate before the pregame timer ends (see paths[4] and paths[8]).
+data modify storage rsot:generation paths[1].generate_with_hub set value false
+data modify storage rsot:generation paths[2].generate_with_hub set value false
+data modify storage rsot:generation paths[3].generate_with_hub set value false
+data modify storage rsot:generation paths[4].generate_with_hub set value true
+data modify storage rsot:generation paths[5].generate_with_hub set value false
+data modify storage rsot:generation paths[6].generate_with_hub set value false
+data modify storage rsot:generation paths[7].generate_with_hub set value false
+data modify storage rsot:generation paths[8].generate_with_hub set value true
+data modify storage rsot:generation paths[9].generate_with_hub set value false
+data modify storage rsot:generation paths[10].generate_with_hub set value false
+data modify storage rsot:generation paths[11].generate_with_hub set value false
