@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "rsot:in_tomb_dimension"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": [
+        "minecraft:blaze",
+        "minecraft:creeper",
+        "minecraft:drowned",
+        "minecraft:husk",
+        "minecraft:magma_cube",
+        "minecraft:pillager",
+        "minecraft:silverfish",
+        "minecraft:skeleton",
+        "minecraft:spider",
+        "minecraft:zombie"
+      ]
+    }
+  }
+]

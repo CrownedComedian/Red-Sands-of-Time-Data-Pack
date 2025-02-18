@@ -1,7 +1,8 @@
 # Executed every 1 second of an active game.
 
 # Do nothing if the game is paused
-execute if data storage rsot:game {"paused":true} run return 0
+execute if data storage rsot:game {"state":"paused"} run return 0
+execute if data storage rsot:game {"state":"resuming"} run return 0
 
 # Update scoreboard values and storage data for this tomb
 $scoreboard players remove $(team) time_remaining 1

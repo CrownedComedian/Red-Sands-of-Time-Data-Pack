@@ -1,7 +1,7 @@
 # Executed every 1 second of the pre-game game.
 
 # Run idle if paused
-execute if data storage rsot:game {"paused":true} run return run schedule function rsot:game/pregame_loop 1s
+execute if data storage rsot:game {"state":"pregame-paused"} run return run schedule function rsot:game/pregame_loop 1s
 
 # Break case
 execute if score #pregame time_remaining matches 0 run return run function rsot:game/pregame_end

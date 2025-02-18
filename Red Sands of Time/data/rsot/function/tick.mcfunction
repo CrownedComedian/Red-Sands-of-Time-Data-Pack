@@ -1,11 +1,3 @@
-# Regen cooldown
-scoreboard players remove #RegenCooldown time_remaining 1
-execute if score #RegenCooldown time_remaining matches 0 run effect give @a[predicate=rsot:in_rsot_dimension] minecraft:regeneration 1 2 true
-execute if score #RegenCooldown time_remaining matches 0 run scoreboard players set #RegenCooldown time_remaining 60
-
-# Lapis pickup cooldown
-scoreboard players remove @a lapis_pickup_cooldown 1
-
 # Lapis particles
 execute at @e[type=minecraft:item,nbt={Item:{id:"minecraft:lapis_lazuli"}}] if predicate rsot:fifteen_percent_random_roll run particle minecraft:ominous_spawning ~ ~ ~ 0.1 0.1 0.1 0.1 1 normal
 execute at @e[type=minecraft:item_display,nbt={item:{id:"minecraft:lapis_lazuli"}}] if predicate rsot:fifteen_percent_random_roll run particle minecraft:ominous_spawning ~ ~ ~ 0.1 0.1 0.1 0.1 1 normal
@@ -28,3 +20,21 @@ kill @e[type=minecraft:experience_orb]
 
 # On player death
 execute as @a[scores={death=1..},tag=free] run function rsot:player_died
+
+# If the game is paused:
+
+# run paused game tick function
+execute if data storage rsot:game {state:"pregame-paused"} run return run function rsot:game/paused_tick
+execute if data storage rsot:game {state:"paused"} run return run function rsot:game/paused_tick
+execute if data storage rsot:game {state:"pregame-resuming"} run return run function rsot:game/paused_tick
+execute if data storage rsot:game {state:"resuming"} run return run function rsot:game/paused_tick
+
+# Else:
+
+# Regen cooldown
+scoreboard players remove #RegenCooldown time_remaining 1
+execute if score #RegenCooldown time_remaining matches 0 run effect give @a[predicate=rsot:in_rsot_dimension] minecraft:regeneration 1 2 true
+execute if score #RegenCooldown time_remaining matches 0 run scoreboard players set #RegenCooldown time_remaining 60
+
+# Lapis pickup cooldown
+scoreboard players remove @a lapis_pickup_cooldown 1

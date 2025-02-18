@@ -1,4 +1,4 @@
-# Executed wehn the pregame timer ends and the game begins!
+# Executed when the pregame timer ends and the game begins!
 
 # Allow path segments to generate
 data modify storage rsot:generation activated set value true

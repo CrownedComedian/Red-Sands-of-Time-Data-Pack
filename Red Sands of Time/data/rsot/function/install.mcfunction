@@ -9,7 +9,6 @@ execute positioned ~ ~10 ~ run kill @n[type=minecraft:text_display,limit=2]
 execute positioned ~ ~10 ~ run kill @n[type=minecraft:block_display]
 
 # Init data
-data modify storage rsot:game paused set value false
 data modify storage rsot:generation selected_paths append value {id:"minecraft:green_concrete", path_type:"green_key"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:red_concrete", path_type:"red_key"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:yellow_concrete", path_type:"yellow_key"}
