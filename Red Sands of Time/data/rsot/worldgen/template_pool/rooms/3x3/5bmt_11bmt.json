@@ -100,6 +100,33 @@
         "processors": "minecraft:empty",
         "projection": "rigid"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:rooms/3x3/2bmt_5bmt_8bmt_11bmt_elebits_bells_puzzle",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/3x3/2bmt_elebits_bells_puzzle",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/3x3/8bmt_elebits_bells_puzzle",
+            "processors": "minecraft:empty"
+          }
+        ]
+      }
     }
   ]
 }
