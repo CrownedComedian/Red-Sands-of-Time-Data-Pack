@@ -1,0 +1,15 @@
+{
+  "name": "rsot:direction/paths/forward/pink_vault_270",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:direction/paths/forward/pink_vault_270",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}
