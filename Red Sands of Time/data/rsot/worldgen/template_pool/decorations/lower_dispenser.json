@@ -64,15 +64,6 @@
         "projection": "rigid"
       },
       "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/lower_dispenser/zombie",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
     }
   ]
 }

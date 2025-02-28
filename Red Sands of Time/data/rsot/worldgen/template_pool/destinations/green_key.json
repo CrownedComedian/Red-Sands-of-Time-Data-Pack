@@ -1,11 +1,11 @@
 {
-  "name": "rsot:direction/paths/forward/green_key_90",
+  "name": "rsot:destinations/green_key",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:direction/paths/forward/green_key_90",
+        "location": "rsot:rooms/keys/green_sliding_piston_puzzle",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },

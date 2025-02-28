@@ -55,7 +55,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
-        "location": "rsot:rooms/5x5/3bmt_13bmt_zombie_hall",
+        "location": "rsot:rooms/5x5/3bmt_13bmt_husk_hall",
         "processors": "minecraft:empty"
       }
     }

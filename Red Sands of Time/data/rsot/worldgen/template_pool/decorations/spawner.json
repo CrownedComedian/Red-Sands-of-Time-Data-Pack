@@ -5,7 +5,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/spawners/zombie",
+        "location": "rsot:decorations/spawners/husk",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },

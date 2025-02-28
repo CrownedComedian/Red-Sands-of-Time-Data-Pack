@@ -8,11 +8,23 @@
             "predicate_type": "minecraft:always_true"
           },
           "input_predicate": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:magma_block"
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:moss_block",
+            "probability": 0.68
           },
           "output_state": {
-            "Name": "minecraft:green_concrete"
+            "Name": "minecraft:command_block",
+            "Properties": {
+              "conditional": "false",
+              "facing": "up"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "Command": "setblock ~ ~ ~ minecraft:redstone_block",
+              "auto": true
+            }
           }
         }
       ]
