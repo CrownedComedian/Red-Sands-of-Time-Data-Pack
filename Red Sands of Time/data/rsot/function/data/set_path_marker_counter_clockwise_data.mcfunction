@@ -1,0 +1,2 @@
+# Merge data of adjacently counter clockwise path marker
+$data modify entity @n[type=minecraft:marker,distance=0..1] data merge value {counter_clockwise_id:"$(id)", counter_clockwise_path_type:"$(path_type)", counter_clockwise_heading:"$(heading)", counter_clockwise_portal:"$(portal)"}
