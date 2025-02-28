@@ -27,9 +27,8 @@ scoreboard players reset * recent_lapis_pickup
 scoreboard players reset * sand_queue
 scoreboard players reset * time_remaining
 
-# TODO - remove hard coded call to set depths:
-# set depths because we just nuked them :(
-function rsot:game/set_depths {red_key: 0, red_vault:2, yellow_key:2, yellow_vault:0, green_key:2, green_vault:3, lapis_key:3, lapis_vault:4, lame_vault:2, dead_end:1}
+# set scoreboard depths from storage because we just nuked them
+function rsot:scoreboard/set_depths with storage rsot:generation depths
 
 # Run setup for team team
 function rsot:game/team_setup {team:"red_rabbits", color:"red"}
@@ -49,6 +48,9 @@ execute store result storage rsot:generation location.z int 1.0 run random value
 
 # Shuffle paths of tomb
 function rsot:data/shuffle_paths
+
+# Don't generate all paths during pre-game
+data modify storage rsot:generation activated set value false
 
 # Begin pre-game timer
 scoreboard players set #pregame time_remaining 60
