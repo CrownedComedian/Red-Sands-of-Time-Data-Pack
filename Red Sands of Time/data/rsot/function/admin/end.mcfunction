@@ -1,6 +1,5 @@
 # Executed when all players have respawned in liminal space after a game.
 data modify storage rsot:game state set value "end"
-data modify storage rsot:generation activated set value false
 
 # Open cage
 function rsot:setblock/redstone with storage rsot:game cage
