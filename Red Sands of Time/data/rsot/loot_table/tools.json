@@ -9,15 +9,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_can_break"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:secretly_unbreakable"
+              "name": "rsot:tool_components"
             }
           ]
         }
@@ -32,15 +24,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_can_break"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:secretly_unbreakable"
+              "name": "rsot:tool_components"
             }
           ]
         }
@@ -55,15 +39,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_can_break"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:secretly_unbreakable"
+              "name": "rsot:tool_components"
             }
           ]
         }
@@ -78,15 +54,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "rsot:secretly_vanish"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_can_break"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:secretly_unbreakable"
+              "name": "rsot:tool_components"
             }
           ]
         }

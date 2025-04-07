@@ -21,19 +21,19 @@
               "count": 16
             },
             {
-              "function": "minecraft:reference",
-              "name": "rsot:tomb_adventure_can_break"
-            },
-            {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:can_break": {
+                  "blocks": "#rsot:breakable"
+                },
                 "minecraft:can_place_on": {
-                  "predicates": [
-                    {
-                      "blocks": "#rsot:torch_placeable"
-                    }
-                  ],
-                  "show_in_tooltip": false
+                  "blocks": "#rsot:torch_placeable"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:can_break",
+                    "minecraft:can_place_on"
+                  ]
                 }
               }
             }

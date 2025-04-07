@@ -1,0 +1,20 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:can_break": {
+      "blocks": "#rsot:breakable"
+    },
+    "minecraft:enchantments": {
+      "minecraft:vanishing_curse": 1
+    },
+    "minecraft:enchantment_glint_override": false,
+    "minecraft:unbreakable": {},
+    "minecraft:tooltip_display": {
+      "hidden_components": [
+        "minecraft:can_break",
+        "minecraft:enchantments",
+        "minecraft:unbreakable"
+      ]
+    }
+  }
+}

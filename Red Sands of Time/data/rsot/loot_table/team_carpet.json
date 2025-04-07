@@ -10,18 +10,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "red_rabbits"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -46,18 +34,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "orange_ocelots"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -82,18 +58,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "yellow_yaks"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -118,18 +82,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "lime_llamas"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -154,18 +106,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "green_geckos"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -190,18 +130,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "cyan_coyotes"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -226,18 +154,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "aqua_axolotls"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -262,18 +178,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "blue_bats"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -298,18 +202,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "purple_pandas"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [
@@ -334,18 +226,6 @@
             {
               "function": "minecraft:reference",
               "name": "rsot:team_carpet_components"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "rsot": {
-                    "team_data": {
-                      "team": "pink_parrots"
-                    }
-                  }
-                }
-              }
             }
           ],
           "conditions": [

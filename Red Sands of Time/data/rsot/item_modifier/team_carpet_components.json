@@ -1,22 +1,23 @@
 [
   {
-    "function": "minecraft:reference",
-    "name": "rsot:secretly_vanish"
-  },
-  {
-    "function": "minecraft:reference",
-    "name": "rsot:tomb_adventure_can_break"
-  },
-  {
     "function": "minecraft:set_components",
     "components": {
+      "minecraft:can_break": {
+        "blocks": "#rsot:breakable"
+      },
       "minecraft:can_place_on": {
-        "predicates": [
-          {
-            "blocks": "#rsot:carpet_placeable"
-          }
-        ],
-        "show_in_tooltip": false
+        "blocks": "#rsot:carpet_placeable"
+      },
+      "minecraft:enchantments": {
+        "minecraft:vanishing_curse": 1
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:can_break",
+          "minecraft:can_place_on",
+          "minecraft:enchantments"
+        ]
       }
     }
   }
