@@ -21,12 +21,12 @@
               "components": {
                 "minecraft:item_model": "rsot:lapis_key",
                 "minecraft:can_break": {
-                  "predicates": [
-                    {
-                      "blocks": "#rsot:breakable"
-                    }
-                  ],
-                  "show_in_tooltip": false
+                  "blocks": "#rsot:breakable"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:can_break"
+                  ]
                 }
               }
             }
