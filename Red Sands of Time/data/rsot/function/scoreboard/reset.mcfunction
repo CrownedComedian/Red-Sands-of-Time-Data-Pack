@@ -8,7 +8,6 @@ scoreboard players reset * lapis_pickup_cooldown
 scoreboard players reset * last_lapis_pickup
 scoreboard players reset * recent_lapis_pickup
 scoreboard players reset * sand_queue
-scoreboard players reset * time_remaining
 
 # Run setup for each team
 function rsot:game/team_setup {team:"red_rabbits", color:"red"}

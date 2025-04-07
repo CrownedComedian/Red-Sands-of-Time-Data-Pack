@@ -2,7 +2,7 @@
 data modify storage rsot:game state set value "pregame"
 
 # Close cage
-function rsot:game/free_players with storage rsot:game cage
+function rsot:setblock/redstone with storage rsot:game cage
 
 # Prep players for the game
 tag @a[nbt={Dimension:"rsot:liminal_space"}] add needs_tomb_spawnpoint

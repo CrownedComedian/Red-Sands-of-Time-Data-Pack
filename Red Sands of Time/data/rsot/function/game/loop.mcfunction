@@ -13,7 +13,7 @@ $execute store result storage rsot:timers $(team).empty_time float 0.1 run score
 execute as @e[type=minecraft:block_display,tag=sinking] at @s run tp @s ~ ~-0.1 ~
 
 # Kill expired sand
-execute at @n[type=minecraft:marker,tag=rsot_timer] run kill @e[type=minecraft:block_display,distance=0..0.8,tag=sinking]
+execute at @n[type=minecraft:marker,tag=rsot_timer,distance=0..6] run kill @e[type=minecraft:block_display,distance=0..0.8,tag=sinking]
 
 # Add sand from sand queue
 $execute if score $(team) sand_queue matches 1.. align xyz run summon minecraft:block_display ^ ^15 ^5 {brightness:{block:10,sky:10},block_state:{Name:"minecraft:red_sand"},Tags:["falling"],teleport_duration:20}

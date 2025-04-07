@@ -26,7 +26,7 @@ data modify storage rsot:generation selected_paths append value {id:"minecraft:b
 data modify storage rsot:generation selected_paths append value {id:"minecraft:black_terracotta", path_type:"dead_end"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:black_terracotta", path_type:"dead_end"}
 function rsot:data/set_depth {path_type:"pink_key", depth:0}
-function rsot:data/set_depth {path_type:"pink_vault", depth:2}
+function rsot:data/set_depth {path_type:"pink_vault", depth:3}
 function rsot:data/set_depth {path_type:"red_key", depth:0}
 function rsot:data/set_depth {path_type:"red_vault", depth:2}
 function rsot:data/set_depth {path_type:"yellow_key", depth:2}
@@ -83,7 +83,7 @@ function rsot:game/open
 
 kill @n[type=item,distance=..10]
 
-tellraw @p "Red Sands of Time has been installed!"
+tellraw @p [{text:"\nRed Sands of Time has been installed!",color:"#b09870"}]
 tellraw @p "The game state defaults to 'open' allowing players to ready up in their tents"
-tellraw @p [{"text":"To begin the game, run "},{"keybind":"[/function rsot:admin/start]","color":"green","clickEvent":{"action":"suggest_command","value":"/function rsot:admin/start"},"hoverEvent":{"action":"show_text","value":"Click to copy command"}}]
-tellraw @p [{"text":"To start a new round at the end of the game, run "},{"keybind":"[/function rsot:admin/open]","color":"green","clickEvent":{"action":"suggest_command","value":"/function rsot:admin/open"},"hoverEvent":{"action":"show_text","value":"Click to copy command"}}]
+tellraw @p [{text:"\nTo begin the game, run\n"},{keybind:"[/function rsot:admin/start]",color:"green",hover_event:{"action":"show_text","value":"Click to copy command"},click_event:{action:"suggest_command",command:"/function rsot:admin/start"}}]
+tellraw @p [{text:"\nTo start a new round at the end of the game, run\n"},{keybind:"[/function rsot:admin/open]",color:"green",hover_event:{"action":"show_text","value":"Click to copy command"},click_event:{action:"suggest_command",command:"/function rsot:admin/open"}}]

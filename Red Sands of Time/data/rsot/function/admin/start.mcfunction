@@ -19,13 +19,9 @@ tellraw @a[nbt={Dimension:"rsot:liminal_space"}] {"text":"The game has started, 
 # (team scoreboard data wiped in rsot:game/team_setup.mcfuntion)
 scoreboard players reset * death
 scoreboard players reset * depth
-scoreboard players reset * empty_time
-scoreboard players reset * gong_sounds
 scoreboard players reset * lapis_pickup_cooldown
 scoreboard players reset * last_lapis_pickup
 scoreboard players reset * recent_lapis_pickup
-scoreboard players reset * sand_queue
-scoreboard players reset * time_remaining
 
 # set scoreboard depths from storage because we just nuked them
 function rsot:scoreboard/set_depths with storage rsot:generation depths

@@ -9,3 +9,6 @@ $scoreboard players set $(team) sand_queue 0
 
 # Since the timer is overfilled, there is no room for sand in the timer.
 $scoreboard players set $(team) empty_time -10
+
+# Start with $0 banked
+$scoreboard players set #banked $(team) 0
