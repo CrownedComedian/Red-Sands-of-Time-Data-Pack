@@ -1,0 +1,362 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:trial_key",
+      "components": {
+        "minecraft:item_model": "rsot:lapis_key"
+      },
+      "count": 1
+    },
+    "title": "Vault unlocked!",
+    "description": "but can you reach it?",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "rsot:custom/root",
+  "criteria": {
+    "red_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:red_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "yellow_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:yellow_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "green_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:green_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "lapis_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:lapis_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "pink_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:pink_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "gray_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:gray_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "cyan_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:cyan_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "purple_vault": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:vault",
+                "state": {
+                  "ominous": "false",
+                  "vault_state": "unlocking"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:trial_key",
+              "components": {
+                "minecraft:item_model": "rsot:purple_key"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_vault",
+      "yellow_vault",
+      "green_vault",
+      "lapis_vault",
+      "pink_vault",
+      "gray_vault",
+      "cyan_vault",
+      "purple_vault"
+    ]
+  ],
+  "rewards": {
+    "function": "rsot:advancement/unlock_vault_blue_team"
+  }
+}
