@@ -5,7 +5,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:paths/depth_0/lower_center_1",
+        "location": "rsot:paths/depth_0/lower_middle_1",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
