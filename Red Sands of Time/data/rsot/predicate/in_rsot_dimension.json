@@ -1,12 +1,10 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
+  "condition": "minecraft:location_check",
   "predicate": {
-    "location": {
-      "biomes": [
-        "rsot:void",
-        "rsot:endless_desert"
-      ]
-    }
+    "biomes": [
+      "rsot:void",
+      "rsot:endless_desert",
+      "rsot:dev"
+    ]
   }
 }
