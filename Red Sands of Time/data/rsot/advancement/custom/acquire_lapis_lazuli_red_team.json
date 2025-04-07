@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:lapis_lazuli"
+    },
+    "title": "May the Red Rabbits find love",
+    "description": "Acquire lapis lazuli",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "rsot:custom/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "red_rabbits"
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": [
+              "minecraft:lapis_lazuli"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rsot:advancement/acquire_lapis_lazuli_red_team"
+  }
+}
