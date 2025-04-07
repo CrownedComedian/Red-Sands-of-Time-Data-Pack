@@ -5,11 +5,14 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:reference",
-          "name": "rsot:not_in_tomb"
+          "condition": "minecraft:survives_explosion"
         },
         {
-          "condition": "minecraft:survives_explosion"
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
         }
       ],
       "entries": [

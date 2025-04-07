@@ -25,8 +25,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -43,8 +46,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -61,8 +67,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -79,8 +88,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -97,8 +109,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -115,8 +130,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -133,8 +151,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -151,8 +172,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -169,8 +193,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -187,8 +214,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -205,8 +235,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -223,8 +256,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -241,8 +277,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -259,8 +298,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -277,8 +319,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -295,8 +340,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -313,8 +361,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -331,8 +382,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -349,8 +403,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -367,8 +424,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -385,8 +445,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -403,8 +466,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -421,8 +487,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -439,8 +508,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -457,8 +529,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -475,8 +550,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -493,8 +571,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -511,8 +592,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -529,8 +613,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -547,8 +634,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -565,8 +655,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -583,8 +676,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -601,8 +697,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -619,8 +718,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -637,8 +739,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }
@@ -655,8 +760,11 @@
             }
           },
           {
-            "condition": "minecraft:reference",
-            "name": "rsot:not_in_tomb"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
           }
         ]
       }

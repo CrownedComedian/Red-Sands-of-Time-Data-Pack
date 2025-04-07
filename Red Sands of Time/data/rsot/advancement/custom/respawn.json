@@ -16,6 +16,10 @@
       "conditions": {
         "player": [
           {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          },
+          {
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {

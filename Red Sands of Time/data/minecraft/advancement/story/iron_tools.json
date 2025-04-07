@@ -2,8 +2,23 @@
   "parent": "minecraft:story/smelt_iron",
   "criteria": {
     "iron_pickaxe": {
-      "conditions": {},
-      "trigger": "minecraft:impossible"
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:in_rsot_dimension"
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": "minecraft:iron_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {

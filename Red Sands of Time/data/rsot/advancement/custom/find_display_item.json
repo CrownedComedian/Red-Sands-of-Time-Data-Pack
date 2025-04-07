@@ -11,13 +11,70 @@
   },
   "parent": "rsot:custom/root",
   "criteria": {
-    "requirement": {
+    "light": {
       "trigger": "minecraft:enter_block",
       "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ],
         "block": "minecraft:light"
+      }
+    },
+    "carpet": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:wool_carpets"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ]
+      }
+    },
+    "torch": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ],
+        "block": "minecraft:torch"
+      }
+    },
+    "wall_torch": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ],
+        "block": "minecraft:wall_torch"
       }
     }
   },
+  "requirements": [
+    [
+      "light",
+      "carpet",
+      "torch",
+      "wall_torch"
+    ]
+  ],
   "rewards": {
     "function": "rsot:advancement/find_display_item"
   },

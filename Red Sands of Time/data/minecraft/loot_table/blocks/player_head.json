@@ -20,15 +20,15 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:can_break": {
-                  "predicates": [
-                    {
-                      "blocks": "#rsot:breakable"
-                    }
-                  ],
-                  "show_in_tooltip": false
+                  "blocks": "#rsot:breakable"
                 },
                 "minecraft:can_place_on": {
                   "blocks": "minecraft:deepslate_tiles"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:can_break"
+                  ]
                 }
               }
             }

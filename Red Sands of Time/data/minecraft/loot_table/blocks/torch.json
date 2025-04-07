@@ -2,12 +2,29 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "conditions": [
         {
           "condition": "minecraft:survives_explosion"
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
         }
       ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:torch"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -17,27 +34,28 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:can_break": {
-                  "predicates": [
-                    {
-                      "blocks": "#rsot:breakable"
-                    }
-                  ],
-                  "show_in_tooltip": false
+                  "blocks": "#rsot:breakable"
                 },
                 "minecraft:can_place_on": {
-                  "predicates": [
-                    {
-                      "blocks": "#rsot:torch_placeable"
-                    }
-                  ],
-                  "show_in_tooltip": false
+                  "blocks": "#rsot:torch_placeable"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:can_break",
+                    "minecraft:can_place_on"
+                  ]
                 }
               }
             }
           ]
         }
       ],
-      "rolls": 1.0
+      "conditions": [
+        {
+          "condition": "minecraft:reference",
+          "name": "rsot:in_rsot_dimension"
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:blocks/torch"
