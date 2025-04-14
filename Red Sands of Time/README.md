@@ -38,7 +38,7 @@ enable-command-block=true
 initial-enabled-packs=vanilla, file/Red Sands of Time
 ```
 ```
-resource-pack=https\://github.com/CrownedComedian/Red-Sands-of-Time-Resource-Pack/releases/download/v1.2.1/Red.Sands.of.Time.Resource.Pack.zip
+resource-pack=https\://github.com/CrownedComedian/Red-Sands-of-Time-Resource-Pack/releases/download/v1.3.0/Red.Sands.of.Time.Resource.Pack.zip
 ```  
 Once installed, you'll have to do some one-time setup (see below) after starting and joining your server.  
 
