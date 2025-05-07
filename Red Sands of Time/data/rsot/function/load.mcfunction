@@ -71,6 +71,7 @@ scoreboard players set #16 x 16
 scoreboard players set #16 z 16
 
 # Scoreboard values used for gameplay
+scoreboard objectives add regen_cooldown dummy
 scoreboard objectives add time_remaining dummy
 scoreboard players set #RegenCooldown time_remaining 50
 scoreboard players set #10 time_remaining 10

@@ -29,8 +29,10 @@ execute if data storage rsot:game {state:"resuming"} run return run function rso
 # Else:
 
 # Regen cooldown
+scoreboard players remove @a[predicate=rsot:in_rsot_dimension,nbt={HurtTime:0s},scores={regen_cooldown=1..}] regen_cooldown 1
+scoreboard players set @a[predicate=rsot:in_rsot_dimension,nbt=!{HurtTime:0s}] regen_cooldown 80
 scoreboard players remove #RegenCooldown time_remaining 1
-execute if score #RegenCooldown time_remaining matches 0 run effect give @a[predicate=rsot:in_rsot_dimension] minecraft:regeneration 1 2 true
+execute if score #RegenCooldown time_remaining matches 0 run effect give @a[predicate=rsot:in_rsot_dimension,scores={regen_cooldown=0}] minecraft:regeneration 1 2 true
 execute if score #RegenCooldown time_remaining matches ..0 run scoreboard players set #RegenCooldown time_remaining 60
 
 # Lapis pickup cooldown
