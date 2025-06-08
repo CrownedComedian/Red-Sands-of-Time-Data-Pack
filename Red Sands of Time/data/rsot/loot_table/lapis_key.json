@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "text": "Lapis vault key",
-                "color": "blue",
+                "color": "#5a82e2",
                 "bold": true,
                 "italic": false
               }

@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "text": "Red vault key",
-                "color": "red",
+                "color": "#c33d37",
                 "bold": true,
                 "italic": false
               }

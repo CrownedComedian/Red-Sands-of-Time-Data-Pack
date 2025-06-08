@@ -10,8 +10,8 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Pink vault key",
-                "color": "#f38baa",
+                "text": "Gray vault key",
+                "color": "#787e80",
                 "bold": true,
                 "italic": false
               }
@@ -19,7 +19,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "rsot:pink_key",
+                "minecraft:item_model": "rsot:gray_key",
                 "minecraft:can_break": {
                   "blocks": "#rsot:breakable"
                 },
