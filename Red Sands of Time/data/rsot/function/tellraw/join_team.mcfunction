@@ -1,0 +1,1 @@
+$function rsot:tellraw/msg {msg: '{text:"You have joined the ", color:"white", underlined:false}, $(display_name), {text:"\nYou can change teams by walking into another team\'s tent or you can leave your team by walking on the campfire in the center of the campsite", color:"white", underlined:false}'}

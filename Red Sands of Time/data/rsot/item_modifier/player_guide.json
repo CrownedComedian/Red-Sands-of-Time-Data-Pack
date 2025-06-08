@@ -1,0 +1,42 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": {
+      "rsot": {
+        "book_type": "player_guide"
+      }
+    },
+    "minecraft:enchantment_glint_override": false,
+    "minecraft:item_model": "minecraft:knowledge_book",
+    "minecraft:tooltip_display": {
+      "hidden_components": [
+        "minecraft:enchantments",
+        "minecraft:item_model"
+      ]
+    },
+    "minecraft:written_book_content": {
+      "pages": [
+        {"raw": "\n\n\n\n   Red Sands of Time\n      Player Guide\n\n\n\n\n  for those who know\n   jack diddly squat\n     about the game"},
+        {"raw": "Table of Contents ---\n\nTeam Tents..........................3\nWhat to Expect.................4\nHow to Play.........................7\nrsot vs sot....................14\n\n"}, 
+        {"raw": "Team Tents ---------\n\nBefore the game begins, join one of the 10 teams by walking into the corrisponding colored tent while the game is in the 'open' state.\n\nAsk a rsot admin to open the tents if you desire to join or switch teams."}, 
+        {"raw": "What to Expect ------\n\nOnce everyone is ready a rsot admin will start the match.\n\nYour team will be teleported to your tomb, isolated from your competitors.\n\nAfter this, you will not be able to interact with competiting teams."}, 
+        {"raw": "You will be given a 1 minute grace period to discuss strategy with your teammates.\n\nWhen the grace period ends, you will be free to explore your tomb.\n\nAll teams have identical copies of the same tomb."}, 
+        {"raw": "Your score will be determined by how much lapis lazuli you acquire and bank before your timer runs out of time.\n\nAdditional details on this will be explained in the next section.\n\nAll team scores will be revealed once the match ends."}, 
+        {"raw": "How to Play --------\n\nPlayers traverse through their tomb in search for red sand, lapis lazuli, and other resources in decorated pots.\n\nUse anything but your fist to break decorated pots and collect red sand."}, 
+        {"raw": "Lapis lazuli can be found sprinkled on the ground, as loot mined by monster spawners, a reward for igniting candles, and locked behind treasure vaults.\n\nTreasure vaults can be unlocked with color-matching keys found in separat paths of the tomb."}, 
+        {"raw": "A team's score is the collective total of all lapis lazuli banked by players of that team.\n\nTo bank lapis lazuli, players must escape the tomb before their timer runs out through the exit portal located in the hub of the tomb across the spawn platform."}, 
+        {"raw": "The exit portal is the only way out of the tomb and the only way to bank your score!\n\nOnce a player exits the tomb they cannot return.\n\nIn the center of the tomb hub is the game timer.\n\nIt runs on red sand."}, 
+        {"raw": "Gather red sand and bring it to the timer to keep the timer from running out.\n\nEach block of red sand will add 10 seconds to your time.\n\nTo add red sand to your timer, place it on one of the composter blocks at the base of the timer."}, 
+        {"raw": "The timer will chime every 10 seconds as long as there is an adequate amount of red sand in it.\n\nIf there is less than 10 seconds left, you will hear a chime every 1 second.\n\nExit the tomb before time runs out to bank your score!"}, 
+        {"raw": "If you die mid-game, you will drop all loot, including 80% of your lapis lazuli -- the remaining 20% is lost forever.\n\nYou will respawn in a cell near the spawn point of the hub which requires a teammate to sacrifice 1 block of red sand in exchange for your freedom."}, 
+        {"raw": "rsot vs sot --------\n\nThis Minecraft data pack was inspired by MC Championship's Sands of Time minigame.\n\nI am not affiliated with Noxcrew, I just wanted my own version of the game for my own enjoyment."}, 
+        {"raw": "For those who have participated in or have watched a playthrough of Sands of Time, here are a few key differences between sot and rsot:\n\n- loot is found in decorated pots\n\n- there is no spynx to bank scores mid-game"},
+        {"raw": "- there are no rusty keys and no wooden doors blocking paths\n\n- scores achieved in rsot do not reflect a similar score in sot\n\n- tomb generation"}
+      ],
+      "title": {
+        "raw": "Red Sands of Time Player Guide"
+      },
+      "author": "CrownedComedian"
+    }
+  }
+}

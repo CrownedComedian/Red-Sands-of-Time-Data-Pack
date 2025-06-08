@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:written_book"
+    },
+    "title": "Taking Control",
+    "description": "enter the rsot admin portal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "use_admin_portal_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"rsot_admin\"]}"
+        },
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "rsot": {
+                "book_type": "admin_portal"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "parent": "rsot:custom/root",
+  "requirements": [
+    [
+      "use_admin_portal_item"
+    ]
+  ],
+  "rewards": {
+    "function": "rsot:advancement/admin_portal"
+  }
+}

@@ -1,7 +1,7 @@
 # This function is executed only once ever
 
 playsound minecraft:ui.button.click master @a ^ ^9 ^
-time set day
+time set 90
 
 # Remove the sign
 fill ^-5 ^4 ^-1 ^5 ^11 ^ minecraft:air replace
@@ -9,13 +9,13 @@ execute positioned ~ ~10 ~ run kill @n[type=minecraft:text_display,limit=2]
 execute positioned ~ ~10 ~ run kill @n[type=minecraft:block_display]
 
 # Init data
-data modify storage rsot:generation selected_paths append value {id:"minecraft:pink_concrete", path_type:"pink_key"}
-# data modify storage rsot:generation selected_paths append value {id:"minecraft:red_concrete", path_type:"red_key"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:yellow_concrete", path_type:"yellow_key"}
+# data modify storage rsot:generation selected_paths append value {id:"minecraft:pink_concrete", path_type:"pink_key"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:green_concrete", path_type:"green_key"}
+data modify storage rsot:generation selected_paths append value {id:"minecraft:red_concrete", path_type:"red_key"}
+data modify storage rsot:generation selected_paths append value {id:"minecraft:yellow_concrete", path_type:"yellow_key"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:blue_concrete", path_type:"lapis_key"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:pink_glazed_terracotta", path_type:"pink_vault"}
-# data modify storage rsot:generation selected_paths append value {id:"minecraft:red_glazed_terracotta", path_type:"red_vault"}
+# data modify storage rsot:generation selected_paths append value {id:"minecraft:pink_glazed_terracotta", path_type:"pink_vault"}
+data modify storage rsot:generation selected_paths append value {id:"minecraft:red_glazed_terracotta", path_type:"red_vault"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:yellow_glazed_terracotta", path_type:"yellow_vault"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:green_glazed_terracotta", path_type:"green_vault"}
 data modify storage rsot:generation selected_paths append value {id:"minecraft:light_blue_glazed_terracotta", path_type:"lapis_vault"}
@@ -42,7 +42,7 @@ data modify storage rsot:generation activated set value false
 # Activate liminal space structures:
 
 # Activate respawns
-# (see rsot:install_escaped_respawn.mcfunction and rsot:install_caged_respawn.mcfunction)
+# (see rsot:data/install_escaped_respawn.mcfunction and rsot:data/install_caged_respawn.mcfunction)
 fill ^ ^-10 ^-34 ^ ^10 ^-34 minecraft:redstone_block replace minecraft:bedrock
 fill ^ ^-10 ^-40 ^ ^10 ^-40 minecraft:redstone_block replace minecraft:bedrock
 
@@ -83,7 +83,6 @@ function rsot:game/open
 
 kill @n[type=item,distance=..10]
 
-tellraw @p [{text:"\nRed Sands of Time has been installed!",color:"#b09870"}]
-tellraw @p "The game state defaults to 'open' allowing players to ready up in their tents"
-tellraw @p [{text:"\nTo begin the game, run\n"},{keybind:"[/function rsot:admin/start]",color:"green",hover_event:{"action":"show_text","value":"Click to copy command"},click_event:{action:"suggest_command",command:"/function rsot:admin/start"}}]
-tellraw @p [{text:"\nTo start a new round at the end of the game, run\n"},{keybind:"[/function rsot:admin/open]",color:"green",hover_event:{"action":"show_text","value":"Click to copy command"},click_event:{action:"suggest_command",command:"/function rsot:admin/open"}}]
+tellraw @p [{text:"Red Sands of Time has been installed!", color:"#b09870"}]
+tellraw @p [{text:"The game state defaults to 'open' allowing players to ready up in their tents", color:"white"}]
+tellraw @p [{text:"Use the admin book to control the game", color:"white"}]

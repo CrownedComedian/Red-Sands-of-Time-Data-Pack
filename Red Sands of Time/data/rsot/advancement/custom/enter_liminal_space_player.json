@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:knowledge_book"
+    },
+    "title": "You Stupid!",
+    "description": "What's 9 + 10? ...",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "player_enter_liminal_space": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:has_player_guide"
+            }
+          }
+        ],
+        "to": "rsot:liminal_space"
+      }
+    }
+  },
+  "parent": "rsot:custom/root",
+  "requirements": [
+    [
+      "player_enter_liminal_space"
+    ]
+  ],
+  "rewards": {
+    "function": "rsot:advancement/enter_liminal_space",
+    "loot": [
+      "rsot:player_guide"
+    ]
+  }
+}

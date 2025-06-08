@@ -20,3 +20,8 @@ scoreboard objectives setdisplay sidebar.team.light_purple
 
 # Give all players in liminal_space resistance
 effect give @a[predicate=rsot:in_liminal_space] minecraft:resistance infinite 255 true
+
+# Terminate admin portal connection
+function rsot:portal/end
+
+function rsot:tellraw/msg {msg:'{text:"Tents are now open", color:"white", underlined:false}'}

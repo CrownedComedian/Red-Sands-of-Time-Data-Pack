@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire"
+    },
+    "title": "Ignore Me",
+    "description": "remove yourself from a rsot team",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "cleansed_by_fire": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "stepping_on": {
+            "block": {
+              "blocks": "minecraft:campfire"
+            }
+          }
+        }
+      }
+    },
+    "is_rsot_team_member": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:is_rsot_team_member"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "rsot:custom/root",
+  "requirements": [
+    [
+      "cleansed_by_fire",
+      "is_rsot_team_member"
+    ]
+  ],
+  "rewards": {
+    "function": "rsot:advancement/clear_team",
+    "loot": []
+  }
+}

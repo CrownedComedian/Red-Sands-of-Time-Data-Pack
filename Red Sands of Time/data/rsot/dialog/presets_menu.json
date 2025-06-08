@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:notice",
+  "title": "Presets Menu",
+  "pause": false,
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "This feature is coming soon..."
+  },
+  "action": {
+    "label": "Back",
+    "width": 200,
+    "action": {
+      "type": "show_dialog",
+      "dialog": "rsot:admin_menu"
+    }
+  }
+}

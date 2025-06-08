@@ -1,0 +1,1 @@
+$tellraw @s [{text:"Red Sands of Time", color:"#b09870", underlined:true}, {text:": ", underlined:false}, $(msg)]

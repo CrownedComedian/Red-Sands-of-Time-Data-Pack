@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Red Sands of Time Admin Menu",
+  "columns": 1,
+  "pause": false,
+  "actions": [
+    {
+      "label": "Open Tents",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "function rsot:admin/open"
+      }
+    },
+    {
+      "label": "Start Game",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "function rsot:admin/start"
+      }
+    },
+    {
+      "label": "Pause Game",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "function rsot:admin/pause"
+      }
+    },
+    {
+      "label": "Resume Game",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "function rsot:admin/resume"
+      }
+    },
+    {
+      "label": "End Game",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "function rsot:admin/end"
+      }
+    },
+    {
+      "label": "Presets",
+      "width": 200,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "rsot:presets_menu"
+      }
+    }
+  ]
+}

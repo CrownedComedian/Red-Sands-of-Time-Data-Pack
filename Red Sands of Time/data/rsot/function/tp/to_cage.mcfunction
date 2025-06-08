@@ -4,7 +4,7 @@
 execute as @a[distance=..300] run function rsot:player_died
 
 # Clear player inventory
-execute as @a[distance=..300] run clear @s
+execute as @a[distance=..300] run clear @s *[!custom_data={rsot:{book_type:"admin_portal"}}]
 
 # Give player resistance
 effect give @s minecraft:resistance infinite 255 true

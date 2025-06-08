@@ -5,12 +5,12 @@ data modify storage rsot:game state set value "pregame"
 function rsot:setblock/redstone with storage rsot:game cage
 
 # Prep players for the game
-tag @a[nbt={Dimension:"rsot:liminal_space"}] add needs_tomb_spawnpoint
-gamemode adventure @a[nbt={Dimension:"rsot:liminal_space"}]
-bossbar set rsot:pregame players @a[nbt={Dimension:"rsot:liminal_space"}]
-effect give @a[nbt={Dimension:"rsot:liminal_space"}] minecraft:slow_falling infinite 9 true
-effect give @a[nbt={Dimension:"rsot:liminal_space"}] minecraft:darkness 3 9 true
-execute as @a[nbt={Dimension:"rsot:liminal_space"}] run playsound block.portal.travel master @s ~ ~ ~
+tag @a[predicate=rsot:in_liminal_space] add needs_tomb_spawnpoint
+gamemode adventure @a[predicate=rsot:in_liminal_space]
+bossbar set rsot:pregame players @a[predicate=rsot:in_liminal_space]
+effect give @a[predicate=rsot:in_liminal_space] minecraft:slow_falling infinite 9 true
+effect give @a[predicate=rsot:in_liminal_space] minecraft:darkness 3 9 true
+execute as @a[predicate=rsot:in_liminal_space] run playsound block.portal.travel master @s ~ ~ ~
 schedule function rsot:effect/enter_blindness 22t
 
 # Wipe scoreboard data

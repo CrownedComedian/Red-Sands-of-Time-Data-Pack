@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:written_book"
+    },
+    "title": "Daddy's Home",
+    "description": "enter the liminal space dimension as a rsot admin",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "admin_enter_liminal_space": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "rsot:has_admin_portal_book"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"rsot_admin\"]}"
+            }
+          }
+        ],
+        "to": "rsot:liminal_space"
+      }
+    }
+  },
+  "parent": "rsot:custom/root",
+  "requirements": [
+    [
+      "admin_enter_liminal_space"
+    ]
+  ],
+  "rewards": {
+    "function": "rsot:advancement/enter_liminal_space",
+    "loot": [
+      "rsot:admin_portal_book"
+    ]
+  }
+}

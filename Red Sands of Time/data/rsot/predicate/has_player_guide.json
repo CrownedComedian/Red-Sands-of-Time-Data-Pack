@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Inventory:[{components:{\"minecraft:custom_data\":{rsot:{book_type:\"player_guide\"}}}}]}"
+  }
+}

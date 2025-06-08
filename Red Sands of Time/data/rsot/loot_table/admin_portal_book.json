@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "rsot:admin_portal_book"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

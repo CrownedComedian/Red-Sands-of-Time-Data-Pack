@@ -5,15 +5,15 @@ data modify storage rsot:game state set value "pregame"
 function rsot:setblock/redstone with storage rsot:game cage
 
 # Prep players for the game
-tag @a[nbt={Dimension:"rsot:liminal_space"}] add needs_tomb_spawnpoint
-gamemode adventure @a[nbt={Dimension:"rsot:liminal_space"}]
-bossbar set rsot:pregame players @a[nbt={Dimension:"rsot:liminal_space"}]
-effect give @a[nbt={Dimension:"rsot:liminal_space"}] minecraft:slow_falling infinite 9 true
-effect give @a[nbt={Dimension:"rsot:liminal_space"}] minecraft:darkness infinite 9 true
-execute as @a[nbt={Dimension:"rsot:liminal_space"}] run playsound block.portal.travel master @s ~ ~ ~ 0.8
+tag @a[predicate=rsot:in_liminal_space] add needs_tomb_spawnpoint
+gamemode adventure @a[predicate=rsot:in_liminal_space]
+bossbar set rsot:pregame players @a[predicate=rsot:in_liminal_space]
+effect give @a[predicate=rsot:in_liminal_space] minecraft:slow_falling infinite 9 true
+effect give @a[predicate=rsot:in_liminal_space] minecraft:darkness infinite 9 true
+execute as @a[predicate=rsot:in_liminal_space] run playsound block.portal.travel master @s ~ ~ ~ 0.8
 schedule function rsot:effect/enter_blindness 22t
-title @a[nbt={Dimension:"rsot:liminal_space"}] times 0t 25t 0t
-tellraw @a[nbt={Dimension:"rsot:liminal_space"}] {"text":"The game has started, yow will be in your tomb shortly..."}
+title @a[predicate=rsot:in_liminal_space] times 0t 25t 0t
+tellraw @a[predicate=rsot:in_liminal_space] {"text":"The game has started, yow will be in your tomb shortly..."}
 
 # Wipe scoreboard data
 # (team scoreboard data wiped in rsot:game/team_setup.mcfuntion)
@@ -53,3 +53,10 @@ scoreboard players set #pregame time_remaining 60
 
 # tp all players to their teams' dimension after blindness
 schedule function rsot:game/pregame 24t
+
+# TODO - tp each spectator to a @r team member
+
+# Terminate admin portal connection
+function rsot:portal/end
+
+function rsot:tellraw/msg {msg:'{text:"starting...", color:"white", underlined:false}'}

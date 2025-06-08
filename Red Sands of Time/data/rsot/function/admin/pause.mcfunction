@@ -1,6 +1,6 @@
 # Do nothing if the game is already paused
-execute if data storage rsot:game {state:"pregame-paused"} run return run tellraw @s "the game is already paused"
-execute if data storage rsot:game {state:"paused"} run return run tellraw @s "the game is already paused"
+execute if data storage rsot:game {state:"pregame-paused"} run return run tellraw @s [{text:"Red Sands of Time: the game is already paused", color:"#b09870"}]
+execute if data storage rsot:game {state:"paused"} run return run tellraw @s [{text:"Red Sands of Time: the game is already paused", color:"#b09870"}]
 
 # Temporaily remove periodic regen effect
 effect clear @a[predicate=rsot:in_tomb_dimension,gamemode=adventure] minecraft:regeneration
@@ -22,3 +22,8 @@ execute if data storage rsot:game {state:"resuming"} run data modify storage rso
 
 # Show title
 title @a[predicate=rsot:in_tomb_dimension] title {"text":"The game was paused!","color":"aqua"}
+
+# Terminate admin portal connection
+function rsot:portal/end
+
+function rsot:tellraw/msg {msg:'{text:"You have paused the game", color:"white", underlined:false}'}

@@ -1,0 +1,1 @@
+playsound block.lodestone.place master @s
