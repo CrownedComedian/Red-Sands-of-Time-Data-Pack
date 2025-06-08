@@ -38,8 +38,11 @@ enable-command-block=true
 initial-enabled-packs=vanilla, file/Red Sands of Time
 ```
 ```
-resource-pack=https\://github.com/CrownedComedian/Red-Sands-of-Time-Resource-Pack/releases/download/v1.3.0/Red.Sands.of.Time.Resource.Pack.zip
+resource-pack=https\://github.com/CrownedComedian/Red-Sands-of-Time-Resource-Pack/releases/download/v1.4.0/Red.Sands.of.Time.Resource.Pack.zip
 ```  
+```
+resource-pack-sha1=c3292fc9bfdae49cc889aec61410ca9838f5989d
+```
 Once installed, you'll have to do some one-time setup (see below) after starting and joining your server.  
 
 
@@ -54,6 +57,7 @@ If no structure was found, run:
 This structure consists of 10 tents, a scoreboard structure, and a cage structure.  
 Make sure all sub structures listed have been generated (see image below).  
 Finally, press the big install button in front of the scoreboard structure!  
+This will give you a copy of the admin book used to control the game.  
 I recommend copying some coordinates near the campfire with ```F3```+```C``` for new players to join.  
 
 ![](images/liminal_space.png)
@@ -61,20 +65,11 @@ I recommend copying some coordinates near the campfire with ```F3```+```C``` for
 
 ## How to Operate
 
-There are three main commands needed to operate the game:  
+Everything needed to operate the game is found in the admin book.  
+Only players with the `rsot_admin` tag are able to operate the book.  
+Players with the `rsot_admin` tag are given a copy of the admin book every time they enter the `rsot:liminal_space` dimension if they do not already have a copy in their inventory.  
 
-```/function rsot:admin/open```  
-Allows players in ```rsot:liminal_space``` to change their team before the next game.  
-Not needed if all players would like to stick with their team.  
-
-```/function rsot:admin/start```  
-Starts the pre-game timer and begins the game!  
-
-```/function rsot:admin/end```  
-Reveals teams' banked scores.  
-Execute this command when all players have returned to ```rsot:liminal_space```.  
-
-The game does not automatically end (for now).  
+The game will automatically end once there are no players in a tomb dimension.  
 Some gamerules are set when the data pack is loaded in.  
 These can be found in ```data > rsot > function > gamerules.mcfunction```  
 Video tutorial coming soon!
@@ -137,19 +132,13 @@ Please include the following:
 ## Planned Features
 
 Listed in no particular order:  
-- Pink vault & key destination rooms
 - Cyan vault & key destination rooms
 - Gray vault & key destination rooms
 - Purple vault & key destination rooms
 - Red key crossword puzzle room
-- Liminal space game control panel
+- Admin book presets menu
   - set selected destinations
   - set destination depths
-  - easy/hard difficulty levels
-- More puzzle rooms
-- More blueprints
 - Branching path generation
-- Pause/unpause feature
-- Automatically end the game
 
 ![](images/rsot_structures.png)
