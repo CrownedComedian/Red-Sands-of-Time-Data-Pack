@@ -1,11 +1,11 @@
 {
-  "name": "rsot:hub/timers/pink_key",
+  "name": "rsot:hub/timer_basements/green_key",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:hub/timers/pink_key",
+        "location": "rsot:hub/timer_basements/green_key_pyramid",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },

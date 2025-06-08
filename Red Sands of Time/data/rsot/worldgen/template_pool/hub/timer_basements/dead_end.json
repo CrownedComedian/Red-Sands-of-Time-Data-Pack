@@ -1,11 +1,11 @@
 {
-  "name": "rsot:hub/timers/green_key",
+  "name": "rsot:hub/timer_basements/dead_end",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:hub/timers/green_key",
+        "location": "rsot:hub/timer_basements/dead_end_cobwebs",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
