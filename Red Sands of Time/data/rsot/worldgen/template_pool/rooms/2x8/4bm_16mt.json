@@ -1,0 +1,27 @@
+{
+  "name": "rsot:rooms/2x8/4bm_16mt",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:rooms/2x8/4bm_9mt_16mt_parkour_cross_hops",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/2x8/9mt_parkour_cross_hops",
+            "processors": "minecraft:empty"
+          }
+        ]
+      }
+    }
+  ]
+}

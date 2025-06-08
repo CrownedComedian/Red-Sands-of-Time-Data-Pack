@@ -1,0 +1,15 @@
+{
+  "name": "rsot:destinations/cyan_key",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:rooms/keys/gray_waterfalls",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}
