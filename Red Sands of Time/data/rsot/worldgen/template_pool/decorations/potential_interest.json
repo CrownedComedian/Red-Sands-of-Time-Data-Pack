@@ -68,34 +68,34 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/decorated_pots/chainmail_boots",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
         "location": "rsot:decorations/decorated_pots/chainmail_chestplate",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/decorated_pots/chainmail_helmet",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
+      "weight": 2
     },
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rsot:decorations/decorated_pots/chainmail_leggings",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+        {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/decorated_pots/iron_chestplate",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/decorated_pots/iron_leggings",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
@@ -114,42 +114,6 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rsot:decorations/decorated_pots/golden_apple",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/decorated_pots/golden_boots",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/decorated_pots/golden_chestplate",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/decorated_pots/golden_helmet",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/decorated_pots/golden_leggings",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },

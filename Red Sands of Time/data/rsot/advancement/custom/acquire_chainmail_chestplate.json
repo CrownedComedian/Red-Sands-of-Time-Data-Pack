@@ -3,13 +3,13 @@
     "icon": {
       "id": "minecraft:chainmail_chestplate"
     },
-    "title": "Chestplate II",
+    "title": "Chestplate I",
     "description": "Acquire a chainmail chestplate",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "rsot:custom/acquire_golden_chestplate",
+  "parent": "rsot:custom/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
