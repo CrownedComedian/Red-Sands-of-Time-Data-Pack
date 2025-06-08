@@ -1,5 +1,5 @@
 {
-  "name": "rsot:blueprints/5x5/9bm_12bm_17bm",
+  "name": "rsot:rooms/5x5/9bm_12bm_17bm",
   "fallback": "minecraft:empty",
   "elements": [
     {

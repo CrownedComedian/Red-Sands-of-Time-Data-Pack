@@ -50,7 +50,7 @@
           {
             "element_type": "minecraft:single_pool_element",
             "projection": "rigid",
-            "location": "rsot:dead_ends/3x3/11bmt_elebits_bells_puzzle",
+            "location": "rsot:dead_ends/3x3/8bmt_elebits_bells_puzzle",
             "processors": "minecraft:empty"
           }
         ]

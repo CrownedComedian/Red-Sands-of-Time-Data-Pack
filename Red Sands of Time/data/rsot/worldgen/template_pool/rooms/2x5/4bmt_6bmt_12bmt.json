@@ -10,6 +10,15 @@
         "location": "rsot:rooms/2x5/4bmt_6bmt_12bmt_y_joint",
         "processors": "minecraft:empty"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:rooms/2x5/4bmt_6bmt_12bmt_dizzy_staircases",
+        "processors": "minecraft:empty"
+      }
     }
   ]
 }

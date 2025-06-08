@@ -31,6 +31,27 @@
         "location": "rsot:rooms/2x5/4bmt_12bmt_neo_jump",
         "processors": "minecraft:empty"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:rooms/2x5/4bmt_6bmt_12bmt_dizzy_staircases",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/2x5/6bmt_dizzy_staircases",
+            "processors": "minecraft:empty"
+          }
+        ]
+      }
     }
   ]
 }

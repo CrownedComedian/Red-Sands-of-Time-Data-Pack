@@ -3,11 +3,20 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 2,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "rsot:blueprints/2x3/3bmt",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "rsot:blueprints/2x2/7bmt",
         "processors": "minecraft:empty"
       }
     }
