@@ -1,0 +1,62 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:trial_key",
+      "components": {
+        "minecraft:item_model": "rsot:gray_key",
+        "minecraft:custom_name": {
+          "text": "Gray vault key",
+          "color": "#787e80",
+          "bold": true,
+          "italic": false
+        }
+      }
+    },
+    "title": "Next stop: the gray vault!",
+    "description": "Acquire the gray key",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "rsot:custom/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "rsot:in_rsot_dimension"
+          }
+        ],
+        "items": [
+          {
+            "items": [
+              "minecraft:trial_key"
+            ],
+            "components": {
+              "minecraft:item_model": "rsot:gray_key",
+              "minecraft:custom_name": {
+                "text": "Gray vault key",
+                "color": "#787e80",
+                "bold": true,
+                "italic": false
+              },
+              "minecraft:can_break": {
+                "blocks": "#rsot:breakable"
+              },
+              "minecraft:tooltip_display": {
+                "hidden_components": [
+                  "minecraft:can_break"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rsot:advancement/acquire_key_gray"
+  }
+}
