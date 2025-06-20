@@ -1,1 +1,1 @@
-$function rsot:tellraw/msg {msg: '{text:"You have You have been removed from the ", color:"white", underlined:false}, $(display_name)'}
+$function rsot:tellraw/msg {msg: '{text:"You have been removed from the ", color:"white", underlined:false}, $(display_name)'}
