@@ -1,0 +1,24 @@
+{
+  "name": "rsot:decorations/3x5/2mt_6bm_10mt_14bm_crossing_paths/basement_type",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/3x5/2mt_6bm_10mt_14bm_crossing_paths/flooded_basement",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/3x5/2mt_6bm_10mt_14bm_crossing_paths/monster_basement",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    }
+  ]
+}
