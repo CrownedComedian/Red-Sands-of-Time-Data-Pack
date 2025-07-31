@@ -74,38 +74,51 @@ function rsot:jukebox/next
 
 # Lime tent
 fill ^11 ^-10 ^14 ^7 ^10 ^14 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^4 ^ ^27 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:5, fence_type:"jungle_fence"}
 
 # Orange tent
 fill ^-9 ^-10 ^14 ^-13 ^10 ^14 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-4 ^ ^27 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:1, fence_type:"dark_oak_fence"}
 
 # Pink tent
 fill ^24 ^-10 ^27 ^24 ^10 ^31 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^12 ^ ^27 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:6, fence_type:"jungle_fence"}
 
 # Aqua tent
 fill ^-24 ^-10 ^29 ^-24 ^10 ^33 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-12 ^ ^26 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:3, fence_type:"jungle_fence"}
 
 # Red tent
 fill ^26 ^-10 ^40 ^26 ^10 ^44 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^11 ^ ^38 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:14, fence_type:"dark_oak_fence"}
 
 # Green tent
 fill ^-26 ^-10 ^42 ^-26 ^10 ^46 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-10 ^ ^41 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:13, fence_type:"jungle_fence"}
 
 # Yellow tent
 fill ^21 ^-10 ^53 ^21 ^10 ^57 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^7 ^ ^52 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:12, fence_type:"dark_oak_fence"}
 
 # Blue tent
 fill ^-21 ^-10 ^55 ^-21 ^10 ^59 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-8 ^ ^50 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:11, fence_type:"dark_oak_fence"}
 
 # Purple tent
 fill ^10 ^-10 ^72 ^6 ^10 ^72 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^5 ^ ^61 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..10] at @s run function rsot:data/sheep {color:10, fence_type:"jungle_fence"}
 
 # Cyan tent
 fill ^-4 ^-10 ^72 ^-8 ^10 ^72 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-9 ^ ^60 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:9, fence_type:"dark_oak_fence"}
 
 # Init to open state
 function rsot:game/open
 
 kill @n[type=item,distance=..10]
+
+# Apply effects
+effect give @e[predicate=rsot:in_liminal_space] minecraft:resistance infinite 255 true
 
 tellraw @p [{text:"Red Sands of Time has been installed!", color:"#b09870"}]
 tellraw @p [{text:"The game state defaults to 'open' allowing players to ready up in their tents", color:"white"}]

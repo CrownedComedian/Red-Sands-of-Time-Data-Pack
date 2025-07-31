@@ -9,16 +9,16 @@
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
-      "weight": 1
+      "weight": 2
     },
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:liminal_space/decorations/red_sheep",
+        "location": "rsot:liminal_space/decorations/sheep",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
-      "weight": 1
+      "weight": 10
     },
     {
       "element": {
@@ -27,7 +27,7 @@
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
-      "weight": 1
+      "weight": 3
     }
   ]
 }

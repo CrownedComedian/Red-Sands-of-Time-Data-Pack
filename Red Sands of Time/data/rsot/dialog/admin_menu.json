@@ -45,6 +45,14 @@
       }
     },
     {
+      "label": "Skip Pregame Timer",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "scoreboard players set #pregame time_remaining 4"
+      }
+    },
+    {
       "label": "Presets",
       "width": 200,
       "action": {
