@@ -1,0 +1,1 @@
+$function rsot:jukebox/play_song with storage rsot:jukebox songs[$(now_playing_index)]

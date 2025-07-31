@@ -6,7 +6,7 @@ $execute unless block ^$(x) ^$(y) ^$(z) #rsot:paths run return 0
 
 # tp marker to here
 $execute summon minecraft:marker positioned ^$(x) ^$(y) ^$(z) run tp @n[type=minecraft:marker,distance=0..3] @s
-kill @n[type=minecraft:marker,tag=!rsot_path]
+kill @n[type=minecraft:marker,tag=!rsot_path,distance=0..1]
 
 # Check for chunk edge
 function rsot:scoreboard/update_marker_pos with block ~ ~ ~

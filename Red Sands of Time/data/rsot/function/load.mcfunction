@@ -88,6 +88,10 @@ scoreboard objectives add recent_lapis_pickup dummy
 # Scoreboard value used for the admin portal
 scoreboard objectives add rsot_admin_portal dummy
 
+# Scoreboard value used for the jukebox playlist
+scoreboard objectives add now_playing dummy
+scoreboard players set #num_songs now_playing 16
+
 effect give @a[predicate=rsot:in_rsot_dimension] minecraft:saturation infinite 0 true
 
 weather clear

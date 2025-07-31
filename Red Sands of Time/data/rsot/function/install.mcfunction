@@ -39,12 +39,36 @@ function rsot:data/set_depth {path_type:"lame_vault", depth:2}
 function rsot:data/set_depth {path_type:"dead_end", depth:1}
 data modify storage rsot:generation activated set value false
 
+# Init jukebox data
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.cat", duration:186}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.blocks", duration:343}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.chirp", duration:187}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.far", duration:192}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.mall", duration:198}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.mellohi", duration:98}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.stal", duration:152}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.strad", duration:188}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.lava_chicken", duration:135}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.ward", duration:250}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.tears", duration:175}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.wait", duration:238}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.pigstep", duration:148}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.precipice", duration:299}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.otherside", duration:195}
+data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.relic", duration:218}
+data modify storage rsot:jukebox shuffle set value true
+data modify storage rsot:jukebox repeat set value false
+
 # Activate liminal space structures:
 
 # Activate respawns
 # (see rsot:data/install_escaped_respawn.mcfunction and rsot:data/install_caged_respawn.mcfunction)
 fill ^ ^-10 ^-34 ^ ^10 ^-34 minecraft:redstone_block replace minecraft:bedrock
 fill ^ ^-10 ^-40 ^ ^10 ^-40 minecraft:redstone_block replace minecraft:bedrock
+
+# Activate dance floor
+fill ^2 ^-4 ^-41 ^2 ^16 ^-41 minecraft:redstone_block replace minecraft:bedrock
+function rsot:jukebox/next
 
 # Activate team tents:
 
