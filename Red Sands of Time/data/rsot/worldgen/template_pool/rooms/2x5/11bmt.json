@@ -32,13 +32,25 @@
           {
             "element_type": "minecraft:single_pool_element",
             "projection": "rigid",
-            "location": "rsot:rooms/2x5/4bmt_11bmt_quartz_pillar_hallway",
+            "location": "rsot:rooms/2x5/4bmt_6bmt_11bmt_13bmt_quartz_pillar_hallway",
             "processors": "minecraft:empty"
           },
           {
             "element_type": "minecraft:single_pool_element",
             "projection": "rigid",
             "location": "rsot:dead_ends/2x5/4bmt_quartz_pillar_hallway",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/2x5/6bmt_quartz_pillar_hallway",
+            "processors": "minecraft:empty"
+          },
+          {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "rsot:dead_ends/2x5/13bmt_quartz_pillar_hallway",
             "processors": "minecraft:empty"
           }
         ]
