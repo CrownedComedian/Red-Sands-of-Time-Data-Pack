@@ -7,9 +7,10 @@ effect clear @a[distance=0..100] minecraft:blindness
 effect clear @a[distance=0..100] minecraft:darkness
 effect clear @a[distance=0..100] minecraft:resistance
 
-# Ensure players have full health
+# Ensure players have full health & glowing effect
 effect give @a[distance=0..100] minecraft:regeneration 3 9 true
 effect give @a[distance=0..100] minecraft:saturation infinite 0 true
+effect give @a[distance=0..100,gamemode=adventure] minecraft:glowing infinite 0 true
 
 # tp all nearby players to starting platform and face the timer
 execute if block ~ ~ ~ minecraft:command_block[facing=north] run tp @a[distance=0..100] ^ ^6 ^30 0 0
