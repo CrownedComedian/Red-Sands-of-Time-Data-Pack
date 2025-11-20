@@ -131,6 +131,15 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/decorated_pots/wind_charge",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "rsot:decorations/decorated_pots/golden_apple",
         "processors": "minecraft:empty",
         "projection": "rigid"
