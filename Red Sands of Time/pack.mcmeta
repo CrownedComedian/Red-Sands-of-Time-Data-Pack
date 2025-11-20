@@ -1,6 +1,7 @@
 {
-    "pack": {
-        "description": "Datapack for the Red Sands of Time game",
-        "pack_format": 81
-    }
+  "pack": {
+    "description": "Datapack for the Red Sands of Time game",
+    "min_format": 82,
+    "max_format": 88
+  }
 }
