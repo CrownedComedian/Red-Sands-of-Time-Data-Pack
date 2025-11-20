@@ -1,4 +1,4 @@
-advancement grant @s only rsot:custom/acquire_chainmail_leggings
+advancement grant @s until rsot:custom/acquire_chainmail_leggings
 
 # remove the iron leggings they just picked up
 clear @s minecraft:iron_leggings 1

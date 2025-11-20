@@ -1,3 +1,5 @@
+advancement grant @s until rsot:custom/acquire_copper_chestplate
+
 # remove the chainmail chestplate they just picked up
 clear @s minecraft:chainmail_chestplate 1
 

@@ -1,15 +1,15 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:chainmail_chestplate"
+      "id": "minecraft:copper_leggings"
     },
-    "title": "Chestplate II",
-    "description": "Acquire a chainmail chestplate",
+    "title": "Leggings I",
+    "description": "Acquire copper leggings",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "rsot:custom/acquire_copper_chestplate",
+  "parent": "rsot:custom/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
@@ -23,7 +23,7 @@
         "items": [
           {
             "items": [
-              "minecraft:chainmail_chestplate"
+              "minecraft:copper_leggings"
             ]
           }
         ]
@@ -31,7 +31,7 @@
     }
   },
   "rewards": {
-    "function": "rsot:advancement/acquire_chainmail_chestplate"
+    "function": "rsot:advancement/acquire_copper_leggings"
   },
   "sends_telemetry_event": false
 }

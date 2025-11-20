@@ -1,3 +1,5 @@
+advancement grant @s until rsot:custom/acquire_copper_leggings
+
 # remove the chainmail leggings they just picked up
 clear @s minecraft:chainmail_leggings 1
 

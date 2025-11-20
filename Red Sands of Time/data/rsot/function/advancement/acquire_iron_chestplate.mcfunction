@@ -1,4 +1,4 @@
-advancement grant @s only rsot:custom/acquire_chainmail_chestplate
+advancement grant @s until rsot:custom/acquire_chainmail_chestplate
 
 # remove the iron chestplate they just picked up
 clear @s minecraft:iron_chestplate 1

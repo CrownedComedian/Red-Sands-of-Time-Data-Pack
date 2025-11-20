@@ -68,6 +68,24 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/decorated_pots/copper_chestplate",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/decorated_pots/copper_leggings",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "rsot:decorations/decorated_pots/chainmail_chestplate",
         "processors": "minecraft:empty",
         "projection": "rigid"
@@ -168,15 +186,6 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rsot:decorations/decorated_pots/torches_14_count",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "rsot:decorations/decorated_pots/arrows_4_count",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
