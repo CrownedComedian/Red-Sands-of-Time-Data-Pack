@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stone_sword",
+          "name": "minecraft:copper_sword",
           "functions": [
             {
               "function": "minecraft:reference",
