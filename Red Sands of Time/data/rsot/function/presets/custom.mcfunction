@@ -8,6 +8,8 @@ $data modify storage rsot:presets custom.pink_paths set value $(pink_paths)
 
 data modify storage rsot:generation preset set value "custom"
 
+# Enabled path variants
+
 data remove storage rsot:enabled_path_variants content
 data remove storage rsot:enabled_path_variants size
 
@@ -18,6 +20,8 @@ execute if data storage rsot:presets {custom:{lapis_paths:"enabled"}} run data m
 execute if data storage rsot:presets {custom:{pink_paths:"enabled"}} run data modify storage rsot:enabled_path_variants content append value "pink"
 
 execute store result storage rsot:enabled_path_variants size int 1 run data get storage rsot:enabled_path_variants content
+
+# Pooled path variants
 
 data remove storage rsot:pooled_path_variants content
 data remove storage rsot:pooled_path_variants size
@@ -30,6 +34,8 @@ execute if data storage rsot:presets {custom:{pink_paths:"pooled"}} run data mod
 
 execute store result storage rsot:pooled_path_variants size int 1 run data get storage rsot:pooled_path_variants content
 data modify storage rsot:pooled_path_variants min set value 0
+
+# Set depths
 
 $function rsot:data/set_depth_for_destination {destination:"red_key", depth:$(red_key_depth)}
 $function rsot:data/set_depth_for_destination {destination:"red_vault", depth:$(red_vault_depth)}

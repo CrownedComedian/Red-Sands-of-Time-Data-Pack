@@ -1,1 +1,0 @@
-$execute as @e[type=minecraft:block_display,tag=falling] at @s run tp @s ~ ~-$(empty_time) ~

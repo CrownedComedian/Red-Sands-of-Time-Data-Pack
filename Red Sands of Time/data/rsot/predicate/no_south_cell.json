@@ -1,0 +1,29 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 38,
+        "max": 40
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 111,
+        "max": 121
+      }
+    }
+  ]
+}

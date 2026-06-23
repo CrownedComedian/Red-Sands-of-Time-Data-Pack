@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:storage",
+    "storage": "rsot:selected_paths",
+    "path": "size"
+  },
+  "range": {
+    "max": 11
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 11
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 22
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 33
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 44
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 48
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 55
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 59
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 66
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 70
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 77
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 88
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 99
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 110
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": 121
+    }
+  ]
+}
