@@ -64,7 +64,8 @@ bossbar add rsot:pregame {"text":"pregame"}
 bossbar set rsot:pregame max 60
 
 # Scoreboard values used on markers when generating paths
-scoreboard objectives add depth dummy
+scoreboard objectives add size dummy
+scoreboard players set #max_path_variants size 6
 scoreboard objectives add x dummy
 scoreboard objectives add z dummy
 scoreboard players set #16 x 16

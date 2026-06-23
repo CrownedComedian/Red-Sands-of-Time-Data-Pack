@@ -3,7 +3,5 @@
   "description": {
     "text": "Purple Pandas team trim",
     "color": "dark_purple"
-  },
-  "ingredient": "minecraft:light",
-  "item_model_index": 0.776809
+  }
 }

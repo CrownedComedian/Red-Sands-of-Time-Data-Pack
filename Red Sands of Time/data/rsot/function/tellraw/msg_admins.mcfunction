@@ -1,0 +1,1 @@
+$tellraw @a[tag=rsot_admin] [{text:"Red Sands of Time", color:"#b09870", underlined:true}, {text:": ", underlined:false}, $(msg)]

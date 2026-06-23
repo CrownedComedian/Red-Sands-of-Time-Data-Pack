@@ -2,6 +2,9 @@
 execute if data storage rsot:game {state:"pregame-paused"} run return run tellraw @s [{text:"Red Sands of Time: the game is already paused", color:"#b09870"}]
 execute if data storage rsot:game {state:"paused"} run return run tellraw @s [{text:"Red Sands of Time: the game is already paused", color:"#b09870"}]
 
+# Do nothing if the game is not running or pre-game
+execute unless data storage rsot:game {state:"pregame"} unless data storage rsot:game {state:"running"} run return run tellraw @s [{text:"Red Sands of Time: the game is not running", color:"#b09870"}]
+
 # Temporaily remove periodic regen effect
 effect clear @a[predicate=rsot:in_tomb_dimension,gamemode=adventure] minecraft:regeneration
 

@@ -59,6 +59,14 @@
         "type": "show_dialog",
         "dialog": "rsot:presets_menu"
       }
+    },
+    {
+      "label": "Report Game Data",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "function rsot:admin/report"
+      }
     }
   ]
 }

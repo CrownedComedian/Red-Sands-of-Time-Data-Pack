@@ -8,38 +8,45 @@ fill ^-5 ^4 ^-1 ^5 ^11 ^ minecraft:air replace
 execute positioned ~ ~10 ~ run kill @n[type=minecraft:text_display,limit=2]
 execute positioned ~ ~10 ~ run kill @n[type=minecraft:block_display]
 
-# Init data
-# data modify storage rsot:generation selected_paths append value {id:"minecraft:pink_concrete", path_type:"pink_key"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:green_concrete", path_type:"green_key"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:red_concrete", path_type:"red_key"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:yellow_concrete", path_type:"yellow_key"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:blue_concrete", path_type:"lapis_key"}
-# data modify storage rsot:generation selected_paths append value {id:"minecraft:pink_glazed_terracotta", path_type:"pink_vault"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:red_glazed_terracotta", path_type:"red_vault"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:yellow_glazed_terracotta", path_type:"yellow_vault"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:green_glazed_terracotta", path_type:"green_vault"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:light_blue_glazed_terracotta", path_type:"lapis_vault"}
-# TODO: finish lame vault
-# data modify storage rsot:generation selected_paths append value {id:"minecraft:light_gray_terracotta", path_type:"lame_vault"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:black_terracotta", path_type:"dead_end"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:black_terracotta", path_type:"dead_end"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:black_terracotta", path_type:"dead_end"}
-data modify storage rsot:generation selected_paths append value {id:"minecraft:black_terracotta", path_type:"dead_end"}
-function rsot:data/set_depth {path_type:"pink_key", depth:0}
-function rsot:data/set_depth {path_type:"pink_vault", depth:3}
-function rsot:data/set_depth {path_type:"red_key", depth:0}
-function rsot:data/set_depth {path_type:"red_vault", depth:2}
-function rsot:data/set_depth {path_type:"yellow_key", depth:2}
-function rsot:data/set_depth {path_type:"yellow_vault", depth:0}
-function rsot:data/set_depth {path_type:"green_key", depth:0}
-function rsot:data/set_depth {path_type:"green_vault", depth:3}
-function rsot:data/set_depth {path_type:"lapis_key", depth:4}
-function rsot:data/set_depth {path_type:"lapis_vault", depth:4}
-function rsot:data/set_depth {path_type:"lame_vault", depth:2}
-function rsot:data/set_depth {path_type:"dead_end", depth:1}
+# Init const data
+data remove storage rsot:all_cell_exits content
+data modify storage rsot:all_cell_exits content append value "exit_left"
+data modify storage rsot:all_cell_exits content append value "exit_forward"
+data modify storage rsot:all_cell_exits content append value "exit_right"
+
+data modify storage rsot:shuffled_list min set value 0
+
+data remove storage rsot:all_paths content
+data modify storage rsot:all_paths content append value {destination:"red_key", id:"minecraft:red_concrete"}
+data modify storage rsot:all_paths content append value {destination:"red_vault", id:"minecraft:red_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"yellow_key", id:"minecraft:yellow_concrete"}
+data modify storage rsot:all_paths content append value {destination:"yellow_vault", id:"minecraft:yellow_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"green_key", id:"minecraft:green_concrete"}
+data modify storage rsot:all_paths content append value {destination:"green_vault", id:"minecraft:green_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"lapis_key", id:"minecraft:blue_concrete"}
+data modify storage rsot:all_paths content append value {destination:"lapis_vault", id:"minecraft:light_blue_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"pink_key", id:"minecraft:pink_concrete"}
+data modify storage rsot:all_paths content append value {destination:"pink_vault", id:"minecraft:pink_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"cyan_key", id:"minecraft:cyan_concrete"}
+data modify storage rsot:all_paths content append value {destination:"cyan_vault", id:"minecraft:cyan_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"gray_key", id:"minecraft:gray_concrete"}
+data modify storage rsot:all_paths content append value {destination:"gray_vault", id:"minecraft:gray_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"purple_key", id:"minecraft:purple_concrete"}
+data modify storage rsot:all_paths content append value {destination:"purple_vault", id:"minecraft:purple_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {destination:"dead_end", id:"minecraft:black_terracotta"}
+
+data remove storage rsot:all_timer_basement_paths content
+data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{destination:"dead_end"}]
+data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{destination:"green_key"}]
+data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{destination:"pink_key"}]
+
+# Init to standard preset
+function rsot:presets/standard
+
 data modify storage rsot:generation activated set value false
 
 # Init jukebox data
+data remove storage rsot:jukebox songs
 data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.cat", duration:186}
 data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.blocks", duration:343}
 data modify storage rsot:jukebox songs append value {song:"minecraft:music_disc.chirp", duration:187}
@@ -74,43 +81,47 @@ function rsot:jukebox/next
 
 # Lime tent
 fill ^11 ^-10 ^14 ^7 ^10 ^14 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^4 ^ ^27 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:5, fence_type:"jungle_fence"}
+execute positioned ^4 ^ ^27 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:5, fence_type:"jungle_fence"}
 
 # Orange tent
 fill ^-9 ^-10 ^14 ^-13 ^10 ^14 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^-4 ^ ^27 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:1, fence_type:"dark_oak_fence"}
+execute positioned ^-4 ^ ^27 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:1, fence_type:"dark_oak_fence"}
 
 # Pink tent
 fill ^24 ^-10 ^27 ^24 ^10 ^31 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^12 ^ ^27 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:6, fence_type:"jungle_fence"}
+execute positioned ^12 ^ ^27 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:6, fence_type:"jungle_fence"}
 
 # Aqua tent
 fill ^-24 ^-10 ^29 ^-24 ^10 ^33 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^-12 ^ ^26 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:3, fence_type:"jungle_fence"}
+execute positioned ^-12 ^ ^26 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:3, fence_type:"jungle_fence"}
 
 # Red tent
 fill ^26 ^-10 ^40 ^26 ^10 ^44 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^11 ^ ^38 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:14, fence_type:"dark_oak_fence"}
+execute positioned ^11 ^ ^38 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:14, fence_type:"dark_oak_fence"}
 
 # Green tent
 fill ^-26 ^-10 ^42 ^-26 ^10 ^46 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^-10 ^ ^41 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:13, fence_type:"jungle_fence"}
+execute positioned ^-10 ^ ^41 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:13, fence_type:"jungle_fence"}
 
 # Yellow tent
 fill ^21 ^-10 ^53 ^21 ^10 ^57 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^7 ^ ^52 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:12, fence_type:"dark_oak_fence"}
+execute positioned ^7 ^ ^52 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:12, fence_type:"dark_oak_fence"}
 
 # Blue tent
 fill ^-21 ^-10 ^55 ^-21 ^10 ^59 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^-8 ^ ^50 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:11, fence_type:"dark_oak_fence"}
+execute positioned ^-8 ^ ^50 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:11, fence_type:"dark_oak_fence"}
 
 # Purple tent
 fill ^10 ^-10 ^72 ^6 ^10 ^72 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^5 ^ ^61 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..10] at @s run function rsot:data/sheep {color:10, fence_type:"jungle_fence"}
+execute positioned ^5 ^ ^61 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:10, fence_type:"jungle_fence"}
 
 # Cyan tent
 fill ^-4 ^-10 ^72 ^-8 ^10 ^72 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^-9 ^ ^60 as @e[type=minecraft:sheep,nbt={Color:0b},distance=0..8] at @s run function rsot:data/sheep {color:9, fence_type:"dark_oak_fence"}
+execute positioned ^-9 ^ ^60 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:9, fence_type:"dark_oak_fence"}
+
+# Activate spynx gas:
+fill ^20 ^-10 ^-15 ^20 ^10 ^-15 minecraft:redstone_block replace minecraft:bedrock
+fill ^-20 ^-10 ^-15 ^-20 ^10 ^-15 minecraft:redstone_block replace minecraft:bedrock
 
 # Init to open state
 function rsot:game/open

@@ -77,7 +77,7 @@ Video tutorial coming soon!
 
 ## How to Play
 
-Red Sands of Time is game that requires communication, time-management, PvE skills, and quick thinking.  
+Red Sands of Time is a game that requires communication, time-management, PvE skills, and quick thinking.  
 *Before the game begins, players can join a team by walking into one of the ten colored team tents of the campsite in ```rsot:liminal_space```.*  
 In a classic game, there are ten teams, each consisting of four players; however, *the game can run with fewer than ten teams and any number of players per team.*  
 Each team spawns in their own tomb, isolated from opponent teams.  
@@ -120,11 +120,7 @@ Do your best, have fun, and don't get sealed in!
 ## Bug Reporting
 
 In the unlikely event of a buggy tomb generation, submit an issue here on GitHub.  
-Please include the following:
-- Full world seed (can be obtained with ```/seed```)  
-- Exact x & z coordinates of the tomb center (should be the corner of a chunk.  Or use ```/data get storage rsot:generation location```)  
-- Which destinations are selected including their depth scores (can be obtained with ```/function rsot:tellraw/depths```)  
-- Which path is broken (exit portal is twelve o'clock and the path below spawn is six o'clock)  
+Please include the ```Game Data Report``` from the rsot admin book.  
 
 ![](images/clock.png)
 
@@ -136,9 +132,6 @@ Listed in no particular order:
 - Gray vault & key destination rooms
 - Purple vault & key destination rooms
 - Red key crossword puzzle room
-- Admin book presets menu
-  - set selected destinations
-  - set destination depths
 - Branching path generation
 
 ![](images/rsot_structures.png)

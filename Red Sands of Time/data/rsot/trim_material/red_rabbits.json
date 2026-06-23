@@ -3,7 +3,5 @@
   "description": {
     "text": "Red Rabbits team trim",
     "color": "red"
-  },
-  "ingredient": "minecraft:light",
-  "item_model_index": 0.776801
+  }
 }

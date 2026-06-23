@@ -3,9 +3,6 @@
 # Run idle if paused
 execute if data storage rsot:game {"state":"pregame-paused"} run return run schedule function rsot:game/pregame_loop 1s
 
-# Break case
-execute if score #pregame time_remaining matches 0 run return run function rsot:game/pregame_end
-
 execute store result bossbar rsot:pregame value run scoreboard players remove #pregame time_remaining 1
 
 # Title display for pre-game countdown
@@ -26,9 +23,7 @@ execute if score #pregame time_remaining matches 0..10 as @a[predicate=rsot:in_t
 execute if score #pregame time_remaining matches 0..3 as @a[predicate=rsot:in_tomb_dimension] at @s run playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 1.0 0.707107
 execute if score #pregame time_remaining matches 0 as @a[predicate=rsot:in_tomb_dimension] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1.0 1.414214
 
-execute if score #pregame time_remaining matches 0 run bossbar set rsot:pregame players
-execute if score #pregame time_remaining matches 0 run title @a[predicate=rsot:in_tomb_dimension] clear
-execute if score #pregame time_remaining matches 0 as @e[tag=rsot_timer] at @s run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:redstone_block replace minecraft:bedrock
-execute if score #pregame time_remaining matches 0 run data modify storage rsot:game state set value "running"
+# Break case
+execute if score #pregame time_remaining matches 0 run return run function rsot:game/pregame_end
 
 schedule function rsot:game/pregame_loop 1s

@@ -1,0 +1,290 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Custom Preset",
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "red_paths",
+      "label": "Red paths",
+      "options": [
+        {
+          "id": "disabled",
+          "display": "Disabled"
+        },
+        {
+          "id": "enabled",
+          "display": "Enabled"
+        },
+        {
+          "id": "pooled",
+          "display": "Randomly Pooled"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "red_key_depth",
+      "width": 200,
+      "label": [
+        {
+          "atlas": "items",
+          "sprite": "rsot:item/red_key"
+        },
+        {
+          "text": " Red key depth"
+        }
+      ],
+      "start": 0,
+      "end": 5,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "red_vault_depth",
+      "width": 200,
+      "label": [
+        {
+          "sprite": "rsot:block/red_vault_front_on_open"
+        },
+        {
+          "text": " Red vault depth"
+        }
+      ],
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "yellow_paths",
+      "label": "Yellow paths",
+      "options": [
+        {
+          "id": "disabled",
+          "display": "Disabled"
+        },
+        {
+          "id": "enabled",
+          "display": "Enabled"
+        },
+        {
+          "id": "pooled",
+          "display": "Randomly Pooled"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "yellow_key_depth",
+      "width": 200,
+      "label": [
+        {
+          "atlas": "items",
+          "sprite": "rsot:item/yellow_key"
+        },
+        {
+          "text": " Yellow key depth"
+        }
+      ],
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "yellow_vault_depth",
+      "width": 200,
+      "label": [
+        {
+          "sprite": "rsot:block/yellow_vault_front_on_open"
+        },
+        {
+          "text": " Yellow vault depth"
+        }
+      ],
+      "start": 0,
+      "end": 5,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "green_paths",
+      "label": "Green paths",
+      "options": [
+        {
+          "id": "disabled",
+          "display": "Disabled"
+        },
+        {
+          "id": "enabled",
+          "display": "Enabled"
+        },
+        {
+          "id": "pooled",
+          "display": "Randomly Pooled"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "green_key_depth",
+      "width": 200,
+      "label": [
+        {
+          "atlas": "items",
+          "sprite": "rsot:item/green_key"
+        },
+        {
+          "text": " Green key depth"
+        }
+      ],
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "green_vault_depth",
+      "width": 200,
+      "label": [
+        {
+          "sprite": "rsot:block/green_vault_front_on_open"
+        },
+        {
+          "text": " Green vault depth"
+        }
+      ],
+      "start": 0,
+      "end": 5,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "lapis_paths",
+      "label": "Lapis paths",
+      "options": [
+        {
+          "id": "disabled",
+          "display": "Disabled"
+        },
+        {
+          "id": "enabled",
+          "display": "Enabled"
+        },
+        {
+          "id": "pooled",
+          "display": "Randomly Pooled"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "lapis_key_depth",
+      "width": 200,
+      "label": [
+        {
+          "atlas": "items",
+          "sprite": "rsot:item/lapis_key"
+        },
+        {
+          "text": " Lapis key depth"
+        }
+      ],
+      "start": 0,
+      "end": 5,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "lapis_vault_depth",
+      "width": 200,
+      "label": [
+        {
+          "sprite": "rsot:block/lapis_vault_front_on_open"
+        },
+        {
+          "text": " Lapis vault depth"
+        }
+      ],
+      "start": 3,
+      "end": 6,
+      "step": 1,
+      "initial": 3
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "pink_paths",
+      "label": "Pink paths",
+      "options": [
+        {
+          "id": "disabled",
+          "display": "Disabled"
+        },
+        {
+          "id": "enabled",
+          "display": "Enabled"
+        },
+        {
+          "id": "pooled",
+          "display": "Randomly Pooled"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "pink_key_depth",
+      "width": 200,
+      "label": [
+        {
+          "atlas": "items",
+          "sprite": "rsot:item/pink_key"
+        },
+        {
+          "text": " Pink key depth"
+        }
+      ],
+      "start": 0,
+      "end": 5,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "pink_vault_depth",
+      "width": 200,
+      "label": [
+        {
+          "sprite": "rsot:block/pink_vault_front_on_open"
+        },
+        {
+          "text": " Pink vault depth"
+        }
+      ],
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "initial": 1
+    }
+  ],
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "pause": false,
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Save",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function rsot:presets/custom {red_paths:$(red_paths), red_key_depth:$(red_key_depth), red_vault_depth:$(red_vault_depth), yellow_paths:$(yellow_paths), yellow_key_depth:$(yellow_key_depth), yellow_vault_depth:$(yellow_vault_depth), green_paths:$(green_paths), green_key_depth:$(green_key_depth), green_vault_depth:$(green_vault_depth), lapis_paths:$(lapis_paths), lapis_key_depth:$(lapis_key_depth), lapis_vault_depth:$(lapis_vault_depth), pink_paths:$(pink_paths), pink_key_depth:$(pink_key_depth), pink_vault_depth:$(pink_vault_depth)}"
+      }
+    }
+  ]
+}

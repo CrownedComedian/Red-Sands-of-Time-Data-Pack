@@ -1,16 +1,88 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": "Presets Menu",
+  "inputs": [],
   "pause": false,
-  "body": {
-    "type": "minecraft:plain_message",
-    "contents": "This feature is coming soon..."
-  },
-  "action": {
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Standard",
+      "tooltip": [
+        {
+          "text": "Red paths\n",
+          "type": "text",
+          "color": "red"
+        },
+        {
+          "text": "Yellow paths\n",
+          "color": "yellow"
+        },
+        {
+          "text": "Green paths\n",
+          "color": "green"
+        },
+        {
+          "text": "Lapis paths",
+          "color": "blue"
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function rsot:presets/standard"
+      }
+    },
+    {
+      "label": "Alternative",
+      "tooltip": [
+        {
+          "text": "Pink paths\n",
+          "type": "text",
+          "color": "light_purple"
+        },
+        {
+          "text": "Yellow paths\n",
+          "color": "yellow"
+        },
+        {
+          "text": "Green paths\n",
+          "color": "green"
+        },
+        {
+          "text": "Lapis paths",
+          "color": "blue"
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function rsot:presets/alternative"
+      }
+    },
+    {
+      "label": "Random",
+      "tooltip": "3 to 5 randomly colored path variants",
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function rsot:presets/random"
+      }
+    },
+    {
+      "label": "Custom",
+      "tooltip": "Set your own paths and depths",
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "rsot:custom_preset"
+      }
+    }
+  ],
+  "exit_action": {
     "label": "Back",
     "width": 200,
     "action": {
-      "type": "show_dialog",
+      "type": "minecraft:show_dialog",
       "dialog": "rsot:admin_menu"
     }
   }

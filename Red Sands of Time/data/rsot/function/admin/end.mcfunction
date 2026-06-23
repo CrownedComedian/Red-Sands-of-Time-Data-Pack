@@ -1,5 +1,7 @@
 # Executed when all players have respawned in liminal space after a game or manually by an admin.
 data modify storage rsot:game state set value "end"
+gamerule fire_damage false
+gamerule fall_damage false
 
 # Tp potential remaining players to liminal space
 execute as @a[predicate=rsot:in_tomb_dimension] run function rsot:game/exit with storage rsot:game respawn.caged
