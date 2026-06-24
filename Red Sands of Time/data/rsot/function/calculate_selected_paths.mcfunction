@@ -1,4 +1,5 @@
-# Calculates the sequence of paths that will be used in the tomb maze for this game, and stores that data in storage rsot:selected_paths
+# Calculates the sequence of paths that will be used in the tomb maze for this game, and stores that data in storage rsot:selected_paths.
+# Designed to be run in the calculation queue.
 
 # Nuke any old data
 data modify storage rsot:selected_paths content set value []
@@ -67,6 +68,3 @@ execute if data storage rsot:generation {preset:"alternative"} run function rsot
 
 # Add basement tag for validation check
 data modify storage rsot:selected_paths content[0].basement set value true 
-
-# If the first path is a timer basement path, move on to the next step
-execute if function rsot:data/is_valid_timer_basement run data modify storage rsot:generation selected_paths set value true

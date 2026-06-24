@@ -1,2 +1,2 @@
 
-$place jigsaw rsot:hub/timer_basements/$(path_type) rsot:path_in 20 ~ ~ ~
+$place jigsaw rsot:hub/timer_basements/$(destination) rsot:path_in 20 ~ ~ ~

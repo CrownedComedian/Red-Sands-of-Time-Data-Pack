@@ -11,5 +11,8 @@ execute store result storage rsot:generation location.z int 1.0 run random value
 # Set random depths if in random preset
 execute if data storage rsot:generation {preset:"random"} run function rsot:data/set_random_depths
 
-# Select tomb path data
-function rsot:select_tomb_paths
+# Append initial work to the calculation queue
+function rsot:data/append_calculate_selected_paths
+
+# Start calculation queue
+function rsot:calculate_step

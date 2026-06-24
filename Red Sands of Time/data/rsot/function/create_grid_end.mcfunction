@@ -33,4 +33,4 @@ data modify storage rsot:paths content append value {}
 
 # Move on to the next step
 function rsot:tellraw/msg_admins {msg:'{text:"Created grid", color:"white", underlined:false}'}
-schedule function rsot:calculate_tomb_maze 2t
+data modify storage rsot:calculation_queue content append value {function:"rsot:calculate_tomb_maze", args:"{}"}
