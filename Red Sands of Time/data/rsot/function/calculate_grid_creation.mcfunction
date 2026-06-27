@@ -13,7 +13,6 @@ scoreboard players set #w grid 0
 
 # Copy scoreboard values to storage for the first cell
 function rsot:scoreboard/store_cell
-data modify storage rsot:grid pointer.state set value "empty"
 
 # Fill data
 function rsot:create_grid_cell

@@ -1,0 +1,125 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 1,
+        "max": 4
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 8,
+        "max": 15
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 19,
+        "max": 26
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 30,
+        "max": 37
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 41,
+        "max": 44
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 78,
+        "max": 81
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 85,
+        "max": 92
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 96,
+        "max": 103
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 107,
+        "max": 114
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "rsot:grid",
+        "path": "pointer.slot"
+      },
+      "range": {
+        "min": 118,
+        "max": 121
+      }
+    }
+  ]
+}

@@ -3,6 +3,10 @@
 # Exit condition checks if we have already generated the last slot
 execute if data storage rsot:grid content[{slot:121}] run return run function rsot:create_grid_end
 
+# Add cell shape data to the current cell in storage
+execute if predicate rsot:is_cell_square run data modify storage rsot:grid pointer.shape set value "7x7"
+execute if predicate rsot:is_cell_rectangular run data modify storage rsot:grid pointer.shape set value "5x7"
+
 # Add current cell data to storage grid
 execute unless predicate rsot:no_cell run data modify storage rsot:grid content append from storage rsot:grid pointer
 

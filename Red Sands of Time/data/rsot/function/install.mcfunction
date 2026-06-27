@@ -14,6 +14,11 @@ data modify storage rsot:all_cell_exits content append value "exit_left"
 data modify storage rsot:all_cell_exits content append value "exit_forward"
 data modify storage rsot:all_cell_exits content append value "exit_right"
 
+data remove storage rsot:all_algorithms content
+data modify storage rsot:all_algorithms content append value "terminal"
+data modify storage rsot:all_algorithms content append value "bifurcated"
+data modify storage rsot:all_algorithms content append value "bushy"
+
 data modify storage rsot:shuffled_list min set value 0
 
 data remove storage rsot:all_paths content
