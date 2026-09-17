@@ -1,13 +1,13 @@
 {
-  "name": "rsot:liminal_space/spawn",
+  "name": "rsot:liminal_space/segment",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:liminal_space/spawn",
+        "location": "rsot:liminal_space/segment_to_respawn",
         "processors": "minecraft:empty",
-        "projection": "rigid"
+        "projection": "terrain_matching"
       },
       "weight": 1
     }

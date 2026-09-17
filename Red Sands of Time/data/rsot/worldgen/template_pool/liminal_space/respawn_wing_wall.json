@@ -1,13 +1,13 @@
 {
-  "name": "rsot:liminal_space/cross_segment",
+  "name": "rsot:liminal_space/respawn_wing_wall",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:liminal_space/segment_1",
+        "location": "rsot:liminal_space/respawn_wing_wall",
         "processors": "minecraft:empty",
-        "projection": "terrain_matching"
+        "projection": "rigid"
       },
       "weight": 1
     }

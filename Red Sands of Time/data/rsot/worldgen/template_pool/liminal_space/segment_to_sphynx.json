@@ -1,13 +1,13 @@
 {
-  "name": "rsot:liminal_space/camp_segment_0",
+  "name": "rsot:liminal_space/segment_to_sphynx",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:liminal_space/camp_segment_0",
+        "location": "rsot:liminal_space/segment_to_sphynx",
         "processors": "minecraft:empty",
-        "projection": "terrain_matching"
+        "projection": "rigid"
       },
       "weight": 1
     }
