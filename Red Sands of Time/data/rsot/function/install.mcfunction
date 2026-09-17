@@ -10,9 +10,9 @@ execute positioned ~ ~10 ~ run kill @n[type=minecraft:block_display]
 
 # Init const data
 data remove storage rsot:all_cell_exits content
-data modify storage rsot:all_cell_exits content append value "exit_left"
-data modify storage rsot:all_cell_exits content append value "exit_forward"
-data modify storage rsot:all_cell_exits content append value "exit_right"
+data modify storage rsot:all_cell_exits content append value "left"
+data modify storage rsot:all_cell_exits content append value "forward"
+data modify storage rsot:all_cell_exits content append value "right"
 
 data remove storage rsot:all_algorithms content
 data modify storage rsot:all_algorithms content append value "terminal"
@@ -22,28 +22,40 @@ data modify storage rsot:all_algorithms content append value "bushy"
 data modify storage rsot:shuffled_list min set value 0
 
 data remove storage rsot:all_paths content
-data modify storage rsot:all_paths content append value {destination:"red_key", id:"minecraft:red_concrete"}
-data modify storage rsot:all_paths content append value {destination:"red_vault", id:"minecraft:red_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"yellow_key", id:"minecraft:yellow_concrete"}
-data modify storage rsot:all_paths content append value {destination:"yellow_vault", id:"minecraft:yellow_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"green_key", id:"minecraft:green_concrete"}
-data modify storage rsot:all_paths content append value {destination:"green_vault", id:"minecraft:green_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"lapis_key", id:"minecraft:blue_concrete"}
-data modify storage rsot:all_paths content append value {destination:"lapis_vault", id:"minecraft:light_blue_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"pink_key", id:"minecraft:pink_concrete"}
-data modify storage rsot:all_paths content append value {destination:"pink_vault", id:"minecraft:pink_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"cyan_key", id:"minecraft:cyan_concrete"}
-data modify storage rsot:all_paths content append value {destination:"cyan_vault", id:"minecraft:cyan_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"gray_key", id:"minecraft:gray_concrete"}
-data modify storage rsot:all_paths content append value {destination:"gray_vault", id:"minecraft:gray_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"purple_key", id:"minecraft:purple_concrete"}
-data modify storage rsot:all_paths content append value {destination:"purple_vault", id:"minecraft:purple_glazed_terracotta"}
-data modify storage rsot:all_paths content append value {destination:"dead_end", id:"minecraft:black_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"red_key", id:"minecraft:red_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"red_vault", id:"minecraft:red_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"yellow_key", id:"minecraft:yellow_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"yellow_vault", id:"minecraft:yellow_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"green_key", id:"minecraft:green_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"green_vault", id:"minecraft:green_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"lapis_key", id:"minecraft:blue_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"lapis_vault", id:"minecraft:light_blue_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"pink_key", id:"minecraft:pink_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"pink_vault", id:"minecraft:pink_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"cyan_key", id:"minecraft:cyan_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"cyan_vault", id:"minecraft:cyan_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"gray_key", id:"minecraft:gray_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"gray_vault", id:"minecraft:gray_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"purple_key", id:"minecraft:purple_concrete"}
+data modify storage rsot:all_paths content append value {path_type:"purple_vault", id:"minecraft:purple_glazed_terracotta"}
+data modify storage rsot:all_paths content append value {path_type:"dead_end", id:"minecraft:black_terracotta"}
 
 data remove storage rsot:all_timer_basement_paths content
-data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{destination:"dead_end"}]
-data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{destination:"green_key"}]
-data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{destination:"pink_key"}]
+data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{path_type:"dead_end"}]
+data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{path_type:"green_key"}]
+data modify storage rsot:all_timer_basement_paths content append from storage rsot:all_paths content[{path_type:"pink_key"}]
+
+# Ensure teams are created and colored
+function rsot:install_team {snake_name:"red_rabbits", display_name:"Red Rabbits", color:"red"}
+function rsot:install_team {snake_name:"orange_ocelots", display_name:"Orange Ocelots", color:"gold"}
+function rsot:install_team {snake_name:"yellow_yaks", display_name:"Yellow Yaks", color:"yellow"}
+function rsot:install_team {snake_name:"lime_llamas", display_name:"Lime Llamas", color:"green"}
+function rsot:install_team {snake_name:"green_geckos", display_name:"Green Geckos", color:"dark_green"}
+function rsot:install_team {snake_name:"cyan_coyotes", display_name:"Cyan Coyotes", color:"dark_aqua"}
+function rsot:install_team {snake_name:"aqua_axolotls", display_name:"Aqua Axolotls", color:"aqua"}
+function rsot:install_team {snake_name:"blue_bats", display_name:"Blue Bats", color:"blue"}
+function rsot:install_team {snake_name:"purple_pandas", display_name:"Purple Pandas", color:"dark_purple"}
+function rsot:install_team {snake_name:"pink_parrots", display_name:"Pink Parrots", color:"light_purple"}
 
 # Init to standard preset
 function rsot:presets/standard

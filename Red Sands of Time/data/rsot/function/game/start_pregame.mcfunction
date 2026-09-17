@@ -8,14 +8,13 @@ function rsot:setblock/redstone with storage rsot:game cage
 tag @a[predicate=rsot:in_liminal_space,predicate=rsot:is_rsot_team_member] add needs_tomb_spawnpoint
 gamemode adventure @a[predicate=rsot:in_liminal_space,predicate=rsot:is_rsot_team_member]
 gamemode spectator @a[predicate=rsot:in_liminal_space,predicate=!rsot:is_rsot_team_member]
-bossbar set rsot:pregame players @a[predicate=rsot:in_liminal_space]
 effect give @a[predicate=rsot:in_liminal_space] minecraft:slow_falling infinite 9 true
 effect give @a[predicate=rsot:in_liminal_space] minecraft:darkness infinite 9 true
 execute as @a[predicate=rsot:in_liminal_space] run playsound block.portal.travel master @s ~ ~ ~ 0.8
 schedule function rsot:effect/enter_blindness 22t
 title @a[predicate=rsot:in_liminal_space] times 0t 25t 0t
-tellraw @a[predicate=rsot:in_liminal_space,predicate=rsot:is_rsot_team_member] {"text":"The game has started, yow will be in your tomb shortly..."}
-tellraw @a[predicate=rsot:in_liminal_space,predicate=!rsot:is_rsot_team_member] {"text":"The game has started, yow will teleported to a random team shortly..."}
+execute as @a[predicate=rsot:in_liminal_space,predicate=rsot:is_rsot_team_member] run function rsot:tellraw/msg {msg:'{"text":"The game has started, yow will be in your tomb shortly...", color:"white", underlined:false}'}
+execute as @a[predicate=rsot:in_liminal_space,predicate=!rsot:is_rsot_team_member] run function rsot:tellraw/msg {msg:'{"text":"The game has started, yow will teleported to a random team shortly..." color:"white", underlined:false}'}
 
 # Wipe scoreboard data
 # (team scoreboard data wiped in rsot:game/team_setup.mcfunction)
