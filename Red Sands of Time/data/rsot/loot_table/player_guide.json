@@ -6,12 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:written_book",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:player_guide"
-            }
-          ]
+          "modifier": "rsot:player_guide"
         }
       ]
     }

@@ -13,15 +13,10 @@
     "player_enter_liminal_space": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:reference",
-              "name": "rsot:has_player_guide"
-            }
-          }
-        ],
+        "player": {
+          "type": "minecraft:inverted",
+          "term": "rsot:has_player_guide"
+        },
         "to": "rsot:liminal_space"
       }
     }

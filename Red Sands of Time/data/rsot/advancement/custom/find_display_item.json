@@ -14,56 +14,41 @@
     "light": {
       "trigger": "minecraft:enter_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ],
-        "block": "minecraft:light"
+        "player": "rsot:in_tomb_dimension",
+        "blocks": "minecraft:light"
       }
     },
     "carpet": {
       "trigger": "minecraft:enter_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "#minecraft:wool_carpets"
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_tomb_dimension",
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#minecraft:wool_carpets"
+                }
               }
             }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "torch": {
       "trigger": "minecraft:enter_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ],
-        "block": "minecraft:torch"
+        "player": "rsot:in_tomb_dimension",
+        "blocks": "minecraft:torch"
       }
     },
     "wall_torch": {
       "trigger": "minecraft:enter_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ],
-        "block": "minecraft:wall_torch"
+        "player": "rsot:in_tomb_dimension",
+        "blocks": "minecraft:wall_torch"
       }
     }
   },

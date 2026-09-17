@@ -7,23 +7,17 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lapis_lazuli",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 30
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 10,
+              "max": 30
             }
-          ]
+          }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:reference",
-          "name": "rsot:in_rsot_dimension"
-        }
-      ]
+      "condition": "rsot:in_rsot_dimension"
     }
   ]
 }

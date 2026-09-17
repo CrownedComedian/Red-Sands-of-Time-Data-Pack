@@ -14,19 +14,19 @@
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          },
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "cyan_coyotes"
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "cyan_coyotes"
+              }
             }
-          }
-        ],
+          ]
+        },
         "items": [
           {
             "items": [

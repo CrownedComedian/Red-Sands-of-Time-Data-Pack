@@ -1,24 +1,22 @@
-[
-  {
-    "function": "minecraft:set_components",
-    "components": {
-      "minecraft:can_break": {
-        "blocks": "#rsot:breakable"
-      },
-      "minecraft:can_place_on": {
-        "blocks": "#rsot:carpet_placeable"
-      },
-      "minecraft:enchantments": {
-        "minecraft:vanishing_curse": 1
-      },
-      "minecraft:enchantment_glint_override": false,
-      "minecraft:tooltip_display": {
-        "hidden_components": [
-          "minecraft:can_break",
-          "minecraft:can_place_on",
-          "minecraft:enchantments"
-        ]
-      }
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:can_break": {
+      "blocks": "#rsot:breakable"
+    },
+    "minecraft:can_place_on": {
+      "blocks": "#rsot:carpet_placeable"
+    },
+    "minecraft:enchantments": {
+      "minecraft:vanishing_curse": 1
+    },
+    "minecraft:enchantment_glint_override": false,
+    "minecraft:tooltip_display": {
+      "hidden_components": [
+        "minecraft:can_break",
+        "minecraft:can_place_on",
+        "minecraft:enchantments"
+      ]
     }
   }
-]
+}

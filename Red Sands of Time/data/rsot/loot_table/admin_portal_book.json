@@ -6,12 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:shield",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:admin_portal_book"
-            }
-          ]
+          "modifier": "rsot:admin_portal_book"
         }
       ]
     }

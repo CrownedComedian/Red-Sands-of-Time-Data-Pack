@@ -6,21 +6,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:red_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "red_rabbits"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "red_rabbits"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -30,21 +23,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:orange_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "orange_ocelots"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "orange_ocelots"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -54,21 +40,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:yellow_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "yellow_yaks"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "yellow_yaks"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -78,21 +57,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lime_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "lime_llamas"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "lime_llamas"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -102,21 +74,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:green_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "green_geckos"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "green_geckos"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -126,21 +91,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cyan_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "cyan_coyotes"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "cyan_coyotes"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -150,21 +108,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:light_blue_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "aqua_axolotls"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "aqua_axolotls"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -174,21 +125,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:blue_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "blue_bats"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "blue_bats"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -198,21 +142,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:purple_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "purple_pandas"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "purple_pandas"
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -222,21 +159,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:pink_carpet",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "rsot:team_carpet_components"
+          "modifier": "rsot:team_carpet_components",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "pink_parrots"
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "team": "pink_parrots"
-              }
-            }
-          ]
+          }
         }
       ]
     }

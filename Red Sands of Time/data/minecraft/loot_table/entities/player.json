@@ -7,19 +7,25 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lapis_lazuli",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "red_rabbits",
-                "scale": 0.79
-              },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "red_rabbits"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "red_rabbits": {
@@ -27,20 +33,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "orange_ocelots",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "orange_ocelots"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "orange_ocelots": {
@@ -48,20 +57,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "yellow_yaks",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "yellow_yaks"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "yellow_yaks": {
@@ -69,20 +81,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "lime_llamas",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "lime_llamas"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "lime_llamas": {
@@ -90,20 +105,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "green_geckos",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "green_geckos"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "green_geckos": {
@@ -111,20 +129,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "aqua_axolotls",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "aqua_axolotls"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "aqua_axolotls": {
@@ -132,20 +153,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "cyan_coyotes",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "cyan_coyotes"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "cyan_coyotes": {
@@ -153,20 +177,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "blue_bats",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "blue_bats"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "blue_bats": {
@@ -174,20 +201,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "purple_pandas",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "purple_pandas"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "purple_pandas": {
@@ -195,20 +225,23 @@
                     }
                   }
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:score",
-                "target": "this",
-                "score": "pink_parrots",
-                "scale": 0.79
               },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:mul",
+                  "inputs": [
+                    {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "pink_parrots"
+                    },
+                    0.79
+                  ]
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:entity_scores",
                   "entity": "this",
                   "scores": {
                     "pink_parrots": {
@@ -216,19 +249,17 @@
                     }
                   }
                 }
-              ]
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:location_check",
-          "predicate": {
-            "biomes": "rsot:void"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "condition": {
+        "type": "minecraft:location_check",
+        "predicate": {
+          "biomes": "rsot:void"
+        }
+      }
     }
   ],
   "random_sequence": "minecraft:entities/player"

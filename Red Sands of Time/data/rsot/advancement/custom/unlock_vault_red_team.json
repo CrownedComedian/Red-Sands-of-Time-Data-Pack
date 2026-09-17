@@ -18,329 +18,281 @@
     "red_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:red_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:red_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "yellow_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:yellow_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:yellow_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "green_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:green_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:green_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "lapis_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:lapis_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:lapis_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "pink_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:pink_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:pink_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "gray_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:gray_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:gray_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "cyan_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:cyan_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:cyan_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     },
     "purple_vault": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "team": "red_rabbits"
-            }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "red_rabbits"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:vault",
-                "state": {
-                  "ominous": "false",
-                  "vault_state": "unlocking"
+        },
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:in_rsot_dimension",
+            {
+              "type": "minecraft:match_block",
+              "blocks": "minecraft:vault",
+              "state": {
+                "ominous": "false",
+                "vault_state": "unlocking"
+              }
+            },
+            {
+              "type": "match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key",
+                "components": {
+                  "minecraft:item_model": "rsot:purple_key"
                 }
               }
             }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:trial_key",
-              "components": {
-                "minecraft:item_model": "rsot:purple_key"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ]
+          ]
+        }
       }
     }
   },

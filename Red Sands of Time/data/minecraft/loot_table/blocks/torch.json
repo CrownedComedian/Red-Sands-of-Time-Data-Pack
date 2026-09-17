@@ -2,19 +2,18 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        },
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "minecraft:survives_explosion"
+          },
+          {
+            "type": "minecraft:inverted",
+            "term": "rsot:in_rsot_dimension"
           }
-        }
-      ],
+        ]
+      },
       "entries": [
         {
           "type": "minecraft:item",
@@ -29,33 +28,26 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:torch",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:can_break": {
-                  "blocks": "#rsot:breakable"
-                },
-                "minecraft:can_place_on": {
-                  "blocks": "#rsot:torch_placeable"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:can_break",
-                    "minecraft:can_place_on"
-                  ]
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:can_break": {
+                "blocks": "#rsot:breakable"
+              },
+              "minecraft:can_place_on": {
+                "blocks": "#rsot:torch_placeable"
+              },
+              "minecraft:tooltip_display": {
+                "hidden_components": [
+                  "minecraft:can_break",
+                  "minecraft:can_place_on"
+                ]
               }
             }
-          ]
+          }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:reference",
-          "name": "rsot:in_rsot_dimension"
-        }
-      ]
+      "condition": "rsot:in_rsot_dimension"
     }
   ],
   "random_sequence": "minecraft:blocks/torch"

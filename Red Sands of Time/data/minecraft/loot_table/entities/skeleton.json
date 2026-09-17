@@ -2,82 +2,68 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
-              "add": false,
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "max": 2,
                 "min": 0
-              },
-              "function": "minecraft:set_count"
+              }
             },
             {
+              "type": "minecraft:enchanted_count_increase",
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1,
-                "min": 0
+                "max": 1.0,
+                "min": 0.0
               },
-              "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "minecraft:arrow"
         }
       ],
       "rolls": 1,
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        }
-      ]
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": "rsot:in_rsot_dimension"
+      }
     },
     {
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
-              "add": false,
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "max": 2,
                 "min": 0
-              },
-              "function": "minecraft:set_count"
+              }
             },
             {
+              "type": "minecraft:enchanted_count_increase",
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1,
-                "min": 0
+                "max": 1.0,
+                "min": 0.0
               },
-              "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "minecraft:bone"
         }
       ],
       "rolls": 1,
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        }
-      ]
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": "rsot:in_rsot_dimension"
+      }
     }
   ],
   "random_sequence": "minecraft:entities/skeleton"

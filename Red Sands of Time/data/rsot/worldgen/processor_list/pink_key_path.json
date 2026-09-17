@@ -12,7 +12,7 @@
             "block": "minecraft:potted_white_tulip"
           },
           "output_state": {
-            "Name": "minecraft:command_block"
+            "id": "minecraft:command_block"
           },
           "block_entity_modifier": {
             "type": "minecraft:append_static",

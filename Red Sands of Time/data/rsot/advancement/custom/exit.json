@@ -16,13 +16,8 @@
     "requirement": {
       "trigger": "minecraft:enter_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ],
-        "block": "minecraft:nether_portal"
+        "player": "rsot:in_rsot_dimension",
+        "blocks": "minecraft:nether_portal"
       }
     }
   },

@@ -14,7 +14,11 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "player": {
-          "nbt": "{Tags:[\"rsot_admin\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": "{Tags:[\"rsot_admin\"]}"
+          }
         },
         "item": {
           "predicates": {

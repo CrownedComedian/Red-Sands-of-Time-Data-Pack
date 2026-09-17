@@ -6,31 +6,34 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:trial_key",
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "Red vault key",
-                "color": "#c33d37",
-                "bold": true,
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:item_model": "rsot:red_key",
-                "minecraft:can_break": {
-                  "blocks": "#rsot:breakable"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:can_break"
-                  ]
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_name",
+                "name": {
+                  "text": "Red vault key",
+                  "color": "#c33d37",
+                  "bold": true,
+                  "italic": false
+                }
+              },
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_model": "rsot:red_key",
+                  "minecraft:can_break": {
+                    "blocks": "#rsot:breakable"
+                  },
+                  "minecraft:tooltip_display": {
+                    "hidden_components": [
+                      "minecraft:can_break"
+                    ]
+                  }
                 }
               }
-            }
-          ]
+            ]
+          }
         }
       ]
     }

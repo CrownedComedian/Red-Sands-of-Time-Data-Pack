@@ -15,29 +15,32 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:torch",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 16
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:can_break": {
-                  "blocks": "#rsot:breakable"
-                },
-                "minecraft:can_place_on": {
-                  "blocks": "#rsot:torch_placeable"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:can_break",
-                    "minecraft:can_place_on"
-                  ]
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_count",
+                "count": 16
+              },
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:can_break": {
+                    "blocks": "#rsot:breakable"
+                  },
+                  "minecraft:can_place_on": {
+                    "blocks": "#rsot:torch_placeable"
+                  },
+                  "minecraft:tooltip_display": {
+                    "hidden_components": [
+                      "minecraft:can_break",
+                      "minecraft:can_place_on"
+                    ]
+                  }
                 }
               }
-            }
-          ]
+            ]
+          }
         }
       ]
     },
@@ -47,12 +50,10 @@
         {
           "type": "minecraft:loot_table",
           "value": "rsot:team_carpet",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 63
-            }
-          ]
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 63
+          }
         }
       ]
     }

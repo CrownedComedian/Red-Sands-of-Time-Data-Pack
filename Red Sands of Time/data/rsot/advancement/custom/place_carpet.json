@@ -4,20 +4,13 @@
     "requirement": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
+        "player": "rsot:in_rsot_dimension",
+        "location": {
+          "type": "minecraft:match_tool",
+          "predicate": {
+            "items": "#minecraft:wool_carpets"
           }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "#minecraft:wool_carpets"
-            }
-          }
-        ]
+        }
       }
     }
   },

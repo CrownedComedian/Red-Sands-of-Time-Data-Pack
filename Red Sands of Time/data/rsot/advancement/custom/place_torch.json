@@ -4,19 +4,11 @@
     "requirement": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ],
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:torch",
-            "properties": {}
-          }
-        ]
+        "player": "rsot:in_rsot_dimension",
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:torch"
+        }
       }
     }
   },

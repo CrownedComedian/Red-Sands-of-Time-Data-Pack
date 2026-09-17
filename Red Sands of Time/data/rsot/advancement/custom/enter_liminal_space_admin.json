@@ -13,22 +13,22 @@
     "admin_enter_liminal_space": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:reference",
-              "name": "rsot:has_admin_portal_book"
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:inverted",
+              "term": "rsot:has_admin_portal_book"
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"rsot_admin\"]}"
+              }
             }
-          },
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "nbt": "{Tags:[\"rsot_admin\"]}"
-            }
-          }
-        ],
+          ]
+        },
         "to": "rsot:liminal_space"
       }
     }

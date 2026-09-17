@@ -6,14 +6,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:painting",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:painting/variant": "minecraft:meditative"
-              }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:painting/variant": "minecraft:meditative"
             }
-          ]
+          }
         }
       ]
     }

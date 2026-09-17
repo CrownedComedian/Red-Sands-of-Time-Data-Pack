@@ -14,31 +14,29 @@
       "trigger": "minecraft:location",
       "conditions": {
         "player": {
-          "stepping_on": {
-            "block": {
-              "blocks": "minecraft:campfire"
+          "type": "minecraft:all_of",
+          "terms": [
+            "rsot:is_rsot_team_member",
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "stepping_on": {
+                  "block": {
+                    "blocks": "minecraft:campfire"
+                  }
+                }
+              }
             }
-          }
+          ]
         }
-      }
-    },
-    "is_rsot_team_member": {
-      "trigger": "minecraft:impossible",
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:is_rsot_team_member"
-          }
-        ]
       }
     }
   },
   "parent": "rsot:custom/root",
   "requirements": [
     [
-      "cleansed_by_fire",
-      "is_rsot_team_member"
+      "cleansed_by_fire"
     ]
   ],
   "rewards": {

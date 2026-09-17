@@ -14,12 +14,7 @@
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        ],
+        "player": "rsot:in_rsot_dimension",
         "items": [
           {
             "items": [

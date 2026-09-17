@@ -11,20 +11,15 @@
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:is_projectile"
+                "id": "#minecraft:is_projectile"
               }
             ]
           }
         },
-        "entity": [
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:reference",
-              "name": "rsot:in_rsot_dimension"
-            }
-          }
-        ]
+        "entity": {
+          "type": "minecraft:inverted",
+          "term": "rsot:in_rsot_dimension"
+        }
       },
       "trigger": "minecraft:player_hurt_entity"
     }

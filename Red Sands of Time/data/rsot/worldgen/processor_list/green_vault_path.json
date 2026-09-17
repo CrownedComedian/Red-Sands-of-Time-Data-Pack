@@ -12,7 +12,7 @@
             "block": "minecraft:magma_block"
           },
           "output_state": {
-            "Name": "minecraft:green_glazed_terracotta"
+            "id": "minecraft:green_glazed_terracotta"
           }
         }
       ]
@@ -30,8 +30,8 @@
             "probability": 0.68
           },
           "output_state": {
-            "Name": "minecraft:command_block",
-            "Properties": {
+            "id": "minecraft:command_block",
+            "properties": {
               "conditional": "false",
               "facing": "up"
             }

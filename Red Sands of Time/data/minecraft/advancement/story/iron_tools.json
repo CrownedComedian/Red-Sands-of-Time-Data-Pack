@@ -3,15 +3,10 @@
   "criteria": {
     "iron_pickaxe": {
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:reference",
-              "name": "rsot:in_rsot_dimension"
-            }
-          }
-        ],
+        "player": {
+          "type": "minecraft:inverted",
+          "term": "rsot:in_rsot_dimension"
+        },
         "items": [
           {
             "items": "minecraft:iron_pickaxe"

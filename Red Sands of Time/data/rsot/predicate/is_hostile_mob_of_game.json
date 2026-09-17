@@ -1,24 +1,24 @@
-[
-  {
-    "condition": "minecraft:reference",
-    "name": "rsot:in_tomb_dimension"
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "entity_type": [
-        "minecraft:blaze",
-        "minecraft:creeper",
-        "minecraft:drowned",
-        "minecraft:husk",
-        "minecraft:magma_cube",
-        "minecraft:pillager",
-        "minecraft:silverfish",
-        "minecraft:skeleton",
-        "minecraft:spider",
-        "minecraft:zombie"
-      ]
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    "rsot:in_tomb_dimension",
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "entity_type": [
+          "minecraft:blaze",
+          "minecraft:creeper",
+          "minecraft:drowned",
+          "minecraft:husk",
+          "minecraft:magma_cube",
+          "minecraft:pillager",
+          "minecraft:silverfish",
+          "minecraft:skeleton",
+          "minecraft:spider",
+          "minecraft:zombie"
+        ]
+      }
     }
-  }
-]
+  ]
+}

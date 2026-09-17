@@ -2,50 +2,40 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:dynamic",
-              "conditions": [
-                {
-                  "block": "minecraft:decorated_pot",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "cracked": "true"
-                  }
+              "condition": {
+                "type": "minecraft:match_block",
+                "blocks": "minecraft:decorated_pot",
+                "state": {
+                  "cracked": "true"
                 }
-              ],
+              },
               "name": "minecraft:sherds"
             },
             {
               "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:copy_components",
-                  "include": [
-                    "minecraft:pot_decorations"
-                  ],
-                  "source": "block_entity"
-                }
-              ],
+              "modifier": {
+                "type": "minecraft:copy_components",
+                "include": [
+                  "minecraft:pot_decorations"
+                ],
+                "source": "block_entity"
+              },
               "name": "minecraft:decorated_pot"
             }
           ]
         }
       ],
       "rolls": 1,
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:reference",
-            "name": "rsot:in_rsot_dimension"
-          }
-        }
-      ]
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": "rsot:in_rsot_dimension"
+      }
     },
     {
       "rolls": 1,
@@ -53,30 +43,21 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone_button",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "cursed": true
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:custom_data": {
+                "cursed": true
               }
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.3
-            }
-          ]
+          },
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.3
+          }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:reference",
-          "name": "rsot:in_rsot_dimension"
-        }
-      ]
+      "condition": "rsot:in_rsot_dimension"
     }
   ],
   "random_sequence": "minecraft:blocks/decorated_pot"
