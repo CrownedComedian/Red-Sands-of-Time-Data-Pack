@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:bowl"
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "rsot:1st_place"
+      }
+    }
+  ]
+}

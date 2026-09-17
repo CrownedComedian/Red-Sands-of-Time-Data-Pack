@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:item_model": "rsot:3rd_place"
+  }
+}
