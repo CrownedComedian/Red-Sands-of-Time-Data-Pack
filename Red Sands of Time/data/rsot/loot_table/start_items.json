@@ -50,10 +50,12 @@
         {
           "type": "minecraft:loot_table",
           "value": "rsot:team_carpet",
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": 63
-          }
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 64
+            }
+          ]
         }
       ]
     }

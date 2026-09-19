@@ -1,6 +1,7 @@
 {
   "type": "minecraft:set_components",
   "components": {
+    "minecraft:max_stack_size": 99,
     "minecraft:can_break": {
       "blocks": "#rsot:breakable"
     },

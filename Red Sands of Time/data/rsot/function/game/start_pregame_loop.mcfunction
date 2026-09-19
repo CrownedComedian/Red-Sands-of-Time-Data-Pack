@@ -1,4 +1,3 @@
-
 # Clear the calculation bossbar for admins
 bossbar remove minecraft:rsot_calculation
 bossbar set rsot:pregame players @a[predicate=rsot:in_tomb_dimension]
