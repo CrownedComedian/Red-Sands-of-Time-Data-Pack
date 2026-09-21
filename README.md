@@ -24,7 +24,7 @@ I just wanted my own version of the game for my own enjoyment.*
 
 This datapack isolates all generated structures to its own custom dimensions.  
 It will not generate over any existing user-created worlds.  
-Install RSOT the same way you'd install any other datapack.  
+Install rsot the same way you'd install any other datapack.  
 See [Tutorials/Installing a data pack](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack) from the Minecraft wiki.  
 
 
@@ -32,16 +32,16 @@ See [Tutorials/Installing a data pack](https://minecraft.wiki/w/Tutorials/Instal
 
 Set the following variables in your ```server.properties``` file:  
 ```
-enable-command-block=true
-```
-```
 initial-enabled-packs=vanilla, file/Red Sands of Time
 ```
 ```
-resource-pack=https\://github.com/CrownedComedian/Red-Sands-of-Time-Resource-Pack/releases/download/v1.4.0/Red.Sands.of.Time.Resource.Pack.zip
+resource-pack=https\://github.com/CrownedComedian/Red-Sands-of-Time-Resource-Pack/releases/download/v1.6.0/Red.Sands.of.Time.Resource.Pack.zip
 ```  
 ```
-resource-pack-sha1=c3292fc9bfdae49cc889aec61410ca9838f5989d
+resource-pack-sha1=392271A73B69DAD5AFB5CCC6C135AB41F8E65015
+```
+```
+simulation-distance=10
 ```
 Once installed, you'll have to do some one-time setup (see below) after starting and joining your server.  
 
