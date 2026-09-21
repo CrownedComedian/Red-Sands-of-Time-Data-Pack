@@ -1,28 +1,40 @@
 {
-  "temperature": 2,
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.overworld.desert"
+      }
+    },
+    "minecraft:gameplay/snow_golem_melts": true,
+    "minecraft:visual/sky_color": 13688039,
+    "minecraft:gameplay/natural_mob_spawns": {
+      "spawns_by_category": {
+        "creature": [
+          {
+            "weight": 4,
+            "type": "minecraft:rabbit",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 3
+            }
+          }
+        ]
+      },
+      "spawn_costs": {}
+    },
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 329011
+  },
+  "carvers": [],
   "downfall": 0,
-  "has_precipitation": false,
   "effects": {
-    "sky_color": 13688039,
-    "fog_color": 12638463,
     "water_color": 4159204,
-    "water_fog_color": 329011,
     "grass_color": 9551193,
     "foliage_color": 624152
   },
-  "spawners": {
-    "creature": [
-      {
-        "type": "minecraft:rabbit",
-        "weight": 4,
-        "minCount": 2,
-        "maxCount": 3
-      }
-    ],
-    "misc": []
-  },
-  "spawn_costs": {},
-  "carvers": [],
   "features": [
     [],
     [],
@@ -36,10 +48,12 @@
     [],
     [],
     [
-      "minecraft:patch_dead_bush_2",
       "minecraft:patch_dry_grass_desert",
+      "minecraft:patch_dead_bush_2",
       "minecraft:patch_cactus_desert"
     ],
     []
-  ]
+  ],
+  "has_precipitation": false,
+  "temperature": 2
 }
