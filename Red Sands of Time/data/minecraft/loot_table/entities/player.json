@@ -13,15 +13,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "red_rabbits"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "red_rabbits"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -37,15 +41,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "orange_ocelots"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "orange_ocelots"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -61,15 +69,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "yellow_yaks"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "yellow_yaks"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -85,15 +97,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "lime_llamas"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "lime_llamas"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -109,15 +125,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "green_geckos"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "green_geckos"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -133,15 +153,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "aqua_axolotls"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "aqua_axolotls"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -157,15 +181,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "cyan_coyotes"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "cyan_coyotes"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -181,15 +209,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "blue_bats"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "blue_bats"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -205,15 +237,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "purple_pandas"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "purple_pandas"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
@@ -229,15 +265,19 @@
               {
                 "type": "minecraft:set_count",
                 "count": {
-                  "type": "minecraft:mul",
-                  "inputs": [
-                    {
-                      "type": "minecraft:score",
-                      "target": "this",
-                      "score": "pink_parrots"
-                    },
-                    0.79
-                  ]
+                  "type": "minecraft:floor_div",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                      {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "pink_parrots"
+                      },
+                      79
+                    ]
+                  },
+                  "right": 100
                 },
                 "add": true,
                 "condition": {
