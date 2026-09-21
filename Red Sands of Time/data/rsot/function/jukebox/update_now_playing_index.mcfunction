@@ -4,8 +4,8 @@
 execute if data storage rsot:jukebox {repeat:true} run return 0
 
 # Play next song if repeat and shuffle are both false
-$execute unless data storage rsot:jukebox shuffle_playlist if predicate {condition:"minecraft:value_check",value:{type:"minecraft:constant",value:$(reverse)},range:1} run scoreboard players remove @s now_playing 1
-$execute unless data storage rsot:jukebox shuffle_playlist unless predicate {condition:"minecraft:value_check",value:{type:"minecraft:constant",value:$(reverse)},range:1} run scoreboard players add @s now_playing 1
+$execute unless data storage rsot:jukebox shuffle_playlist if predicate  {type:"minecraft:int_value_check",value:$(reverse),test:1} run scoreboard players remove @s now_playing 1
+$execute unless data storage rsot:jukebox shuffle_playlist unless predicate {type:"minecraft:int_value_check",value:$(reverse),test:1} run scoreboard players add @s now_playing 1
 execute unless data storage rsot:jukebox shuffle_playlist store result storage rsot:jukebox now_playing_index int 1 run return run scoreboard players operation @s now_playing %= #num_songs now_playing
 
 # Shuffle only if repeat is false and a shuffle playlist exists
