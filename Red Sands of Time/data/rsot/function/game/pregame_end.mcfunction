@@ -2,7 +2,7 @@
 
 bossbar set rsot:pregame players
 title @a[predicate=rsot:in_tomb_dimension] clear
-execute as @e[tag=rsot_timer] at @s run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:redstone_block replace minecraft:bedrock
+execute as @e[type=minecraft:marker,tag=rsot_timer] at @s run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:redstone_block replace minecraft:bedrock
 data modify storage rsot:game state set value "running"
 gamerule fire_damage true
 gamerule fall_damage true

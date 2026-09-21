@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_bars"
+    },
+    "title": "The Jail Cell is Empty",
+    "description": "Attempt to unlock a jail with no player to free",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "interact_with_jail_interaction": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": "rsot:in_tomb_dimension",
+        "item": {
+          "items": "minecraft:red_sand"
+        },
+        "entity": {
+          "type": "minecraft:all_of",
+          "terms": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {
+                "all_of": [
+                  "rsot_jail"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "parent": "rsot:custom/root",
+  "requirements": [
+    [
+      "interact_with_jail_interaction"
+    ]
+  ],
+  "rewards": {
+    "function": "rsot:advancement/jail_is_empty",
+    "loot": []
+  }
+}

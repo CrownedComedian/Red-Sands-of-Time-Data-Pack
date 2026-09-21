@@ -1,6 +1,6 @@
 # Executes when a new rsot tomb is generated
 clear @a[distance=0..100] *[!custom_data={rsot:{book_type:"admin_portal"}}]
-tag @a[distance=0..100] add free
+tag @a[distance=0..100] add rsot_free
 advancement revoke @a[distance=0..100] through rsot:custom/root
 effect clear @a[distance=0..100] minecraft:slow_falling
 effect clear @a[distance=0..100] minecraft:blindness

@@ -16,6 +16,7 @@ execute if score @s pink_parrots matches 1.. run function rsot:scoreboard/remove
 advancement revoke @s through rsot:custom/root
 
 # Cleanup
-tag @s remove free
+tag @s remove rsot_free
+tag @s add rsot_dead
 scoreboard players reset @s death
 scoreboard players reset @s last_lapis_pickup

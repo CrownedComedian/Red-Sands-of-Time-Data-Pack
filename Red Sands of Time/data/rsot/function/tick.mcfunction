@@ -20,7 +20,7 @@ execute at @e[type=minecraft:interaction,tag=alphabet,nbt={attack:{}}] as @e[typ
 kill @e[type=minecraft:experience_orb]
 
 # On player death
-execute as @a[scores={death=1..},tag=free] run function rsot:player_died
+execute as @a[scores={death=1..},tag=rsot_free] run function rsot:player_died
 
 # If the game is paused:
 

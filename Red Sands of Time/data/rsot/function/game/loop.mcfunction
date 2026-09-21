@@ -29,8 +29,11 @@ $execute unless score $(team) time_remaining matches 20 if score $(team) gong_so
 $execute if score $(team) time_remaining matches 20 as @a[distance=..300] at @s run function rsot:playsound/20_seconds
 $execute if score $(team) time_remaining matches 1..9 as @a[distance=..300] at @s run function rsot:playsound/10_seconds
 
+# Unlock timer if sand can be placed in
+$execute if score $(team) time_remaining matches 119 as @n[type=interaction,tag=rsot_timer,distance=0..10] at @s run tp @s ~ ~-1 ~
+
 # Check for game end
 # The game is over if there are no "free" players OR if the timer runs out of time
 $execute if score $(team) time_remaining matches 0 run setblock ^1 ^ ^ minecraft:bedrock
 $execute if score $(team) time_remaining matches 0 run function rsot:tp/to_cage with storage rsot:game respawn.caged
-execute unless entity @p[distance=..300,tag=free] run function rsot:tp/to_cage with storage rsot:game respawn.caged
+execute unless entity @p[distance=..300,tag=rsot_free] run function rsot:tp/to_cage with storage rsot:game respawn.caged
