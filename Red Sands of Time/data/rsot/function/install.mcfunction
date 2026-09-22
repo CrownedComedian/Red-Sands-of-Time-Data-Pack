@@ -1,5 +1,18 @@
 # This function is executed only once ever
 
+# Apply gamerules (execute in each dimension for Bukkit support)
+execute in rsot:liminal_space run function rsot:gamerules
+execute in rsot:red_rabbits run function rsot:gamerules
+execute in rsot:orange_ocelots run function rsot:gamerules
+execute in rsot:yellow_yaks run function rsot:gamerules
+execute in rsot:lime_llamas run function rsot:gamerules
+execute in rsot:green_geckos run function rsot:gamerules
+execute in rsot:cyan_coyotes run function rsot:gamerules
+execute in rsot:aqua_axolotls run function rsot:gamerules
+execute in rsot:blue_bats run function rsot:gamerules
+execute in rsot:purple_pandas run function rsot:gamerules
+execute in rsot:pink_parrots run function rsot:gamerules
+
 playsound minecraft:ui.button.click master @a ^ ^9 ^
 time set 90
 
@@ -87,8 +100,8 @@ data modify storage rsot:jukebox repeat set value false
 
 # Activate respawns
 # (see rsot:data/install_escaped_respawn.mcfunction and rsot:data/install_caged_respawn.mcfunction)
-fill ^ ^-10 ^-34 ^ ^10 ^-34 minecraft:redstone_block replace minecraft:bedrock
-fill ^ ^-10 ^-40 ^ ^10 ^-40 minecraft:redstone_block replace minecraft:bedrock
+fill ^ ^-16 ^-34 ^ ^16 ^-34 minecraft:redstone_block replace minecraft:bedrock
+fill ^ ^-16 ^-40 ^ ^16 ^-40 minecraft:redstone_block replace minecraft:bedrock
 
 # Activate dance floor
 fill ^2 ^-4 ^-41 ^2 ^16 ^-41 minecraft:redstone_block replace minecraft:bedrock
@@ -97,48 +110,58 @@ function rsot:jukebox/next
 # Activate team tents:
 
 # Lime tent
-fill ^11 ^-10 ^14 ^7 ^10 ^14 minecraft:redstone_block replace minecraft:bedrock
+fill ^11 ^-16 ^14 ^7 ^16 ^14 minecraft:redstone_block replace minecraft:bedrock
 execute positioned ^4 ^ ^27 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:5, fence_type:"jungle_fence"}
 
 # Orange tent
-fill ^-9 ^-10 ^14 ^-13 ^10 ^14 minecraft:redstone_block replace minecraft:bedrock
+fill ^-9 ^-16 ^14 ^-13 ^16 ^14 minecraft:redstone_block replace minecraft:bedrock
 execute positioned ^-4 ^ ^27 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:1, fence_type:"dark_oak_fence"}
 
 # Pink tent
-fill ^24 ^-10 ^27 ^24 ^10 ^31 minecraft:redstone_block replace minecraft:bedrock
+fill ^24 ^-16 ^27 ^24 ^16 ^31 minecraft:redstone_block replace minecraft:bedrock
 execute positioned ^12 ^ ^27 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:6, fence_type:"jungle_fence"}
 
 # Aqua tent
-fill ^-24 ^-10 ^29 ^-24 ^10 ^33 minecraft:redstone_block replace minecraft:bedrock
+fill ^-24 ^-16 ^29 ^-24 ^16 ^33 minecraft:redstone_block replace minecraft:bedrock
 execute positioned ^-12 ^ ^26 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:3, fence_type:"jungle_fence"}
 
 # Red tent
-fill ^26 ^-10 ^40 ^26 ^10 ^44 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^11 ^ ^38 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:14, fence_type:"dark_oak_fence"}
+fill ^26 ^-16 ^40 ^26 ^16 ^44 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^11 ^-4 ^38 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:14, fence_type:"dark_oak_fence"}
+execute positioned ^11 ^4 ^38 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:14, fence_type:"dark_oak_fence"}
 
 # Green tent
-fill ^-26 ^-10 ^42 ^-26 ^10 ^46 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^-10 ^ ^41 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:13, fence_type:"jungle_fence"}
+fill ^-26 ^-16 ^42 ^-26 ^16 ^46 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-16 ^-4 ^41 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:13, fence_type:"jungle_fence"}
+execute positioned ^-16 ^4 ^41 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:13, fence_type:"jungle_fence"}
 
 # Yellow tent
-fill ^21 ^-10 ^53 ^21 ^10 ^57 minecraft:redstone_block replace minecraft:bedrock
-execute positioned ^7 ^ ^52 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:12, fence_type:"dark_oak_fence"}
+fill ^21 ^-16 ^53 ^21 ^16 ^57 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^7 ^-6 ^52 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:4, fence_type:"dark_oak_fence"}
+execute positioned ^7 ^ ^52 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:4, fence_type:"dark_oak_fence"}
+execute positioned ^7 ^6 ^52 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:4, fence_type:"dark_oak_fence"}
 
 # Blue tent
-fill ^-21 ^-10 ^55 ^-21 ^10 ^59 minecraft:redstone_block replace minecraft:bedrock
+fill ^-21 ^-16 ^55 ^-21 ^16 ^59 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-8 ^-6 ^50 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:11, fence_type:"dark_oak_fence"}
 execute positioned ^-8 ^ ^50 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:11, fence_type:"dark_oak_fence"}
+execute positioned ^-8 ^6 ^50 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:11, fence_type:"dark_oak_fence"}
 
 # Purple tent
-fill ^10 ^-10 ^72 ^6 ^10 ^72 minecraft:redstone_block replace minecraft:bedrock
+fill ^16 ^-16 ^72 ^6 ^16 ^72 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^5 ^-6 ^61 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:10, fence_type:"jungle_fence"}
 execute positioned ^5 ^ ^61 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:10, fence_type:"jungle_fence"}
+execute positioned ^5 ^6 ^61 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..10] at @s run function rsot:data/sheep {color:10, fence_type:"jungle_fence"}
 
 # Cyan tent
-fill ^-4 ^-10 ^72 ^-8 ^10 ^72 minecraft:redstone_block replace minecraft:bedrock
+fill ^-4 ^-16 ^72 ^-8 ^16 ^72 minecraft:redstone_block replace minecraft:bedrock
+execute positioned ^-9 ^-6 ^60 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:9, fence_type:"dark_oak_fence"}
 execute positioned ^-9 ^ ^60 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:9, fence_type:"dark_oak_fence"}
+execute positioned ^-9 ^6 ^60 as @e[type=minecraft:sheep,tag=rsot_sheep,distance=0..8] at @s run function rsot:data/sheep {color:9, fence_type:"dark_oak_fence"}
 
 # Activate spynx gas:
-fill ^20 ^-10 ^-15 ^20 ^10 ^-15 minecraft:redstone_block replace minecraft:bedrock
-fill ^-20 ^-10 ^-15 ^-20 ^10 ^-15 minecraft:redstone_block replace minecraft:bedrock
+fill ^20 ^-16 ^-15 ^20 ^16 ^-15 minecraft:redstone_block replace minecraft:bedrock
+fill ^-20 ^-16 ^-15 ^-20 ^16 ^-15 minecraft:redstone_block replace minecraft:bedrock
 
 # Init to open state
 function rsot:game/open

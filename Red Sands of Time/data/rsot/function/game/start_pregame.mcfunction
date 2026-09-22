@@ -2,7 +2,7 @@
 data modify storage rsot:game state set value "pregame"
 
 # Close cage
-function rsot:setblock/redstone with storage rsot:game cage
+execute in rsot:liminal_space run function rsot:setblock/redstone with storage rsot:game cage
 
 # Prep players for the game
 tag @a[predicate=rsot:in_liminal_space,predicate=rsot:is_rsot_team_member] add needs_tomb_spawnpoint
@@ -22,6 +22,9 @@ scoreboard players reset * death
 scoreboard players reset * lapis_pickup_cooldown
 scoreboard players reset * last_lapis_pickup
 scoreboard players reset * recent_lapis_pickup
+
+# Wipe storage data
+data remove storage rsot:generation placed_tombs
 
 # Run setup for teams
 function rsot:game/team_setup {team:"red_rabbits", color:"red"}

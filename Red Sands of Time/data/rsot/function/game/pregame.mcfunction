@@ -10,10 +10,4 @@ data modify storage rsot:generation location.dimension set from storage rsot:gam
 function rsot:tp/next_team with storage rsot:generation location
 
 # Generate tombs after team players have been teleported
-schedule function rsot:scheduled/tomb_setup 5t
-
-# Remove the team from the list of teams to tp
-data remove storage rsot:game teams_to_tp[0]
-
-# Continue to the next team
-schedule function rsot:game/pregame 13t
+schedule function rsot:scheduled/tomb_setup 10t
