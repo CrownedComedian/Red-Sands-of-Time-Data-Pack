@@ -27,7 +27,11 @@
           "name": "minecraft:rotten_flesh"
         }
       ],
-      "rolls": 1
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": "rsot:in_rsot_dimension"
+      }
     },
     {
       "entries": [

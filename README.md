@@ -11,6 +11,7 @@ I just wanted my own version of the game for my own enjoyment.*
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
   - [Configure server.properties](#configure-serverproperties)
+  - [Extra Configuration for PaperMC Servers](#extra-configuration-for-papermc-servers)
   - [One Time Setup](#one-time-setup)
 - [How to Operate](#how-to-operate)
 - [How to Play](#how-to-play)
@@ -45,6 +46,19 @@ simulation-distance=10
 ```
 Once installed, you'll have to do some one-time setup (see below) after starting and joining your server.  
 
+
+### Extra Configuration for PaperMC Servers
+
+If you are running the game on a vanilla server, you can skip this step.  
+For PaperMC servers, player concurrent chunk settings must be set to `-1` or a minimum of `10`!  
+The settings can be found in ```{your server's root folder} > config > paper-global.yml```  
+Modify the `player-max-concurrent-chunk-generates` and `player-max-concurrent-chunk-loads` settings to be something like so:  
+```
+chunk-loading-advanced:
+  auto-config-send-distance: true
+  player-max-concurrent-chunk-generates: 16
+  player-max-concurrent-chunk-loads: 16
+```
 
 ### One Time Setup
 

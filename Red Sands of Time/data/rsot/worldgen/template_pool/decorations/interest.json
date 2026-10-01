@@ -199,6 +199,15 @@
         "projection": "rigid"
       },
       "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:decorations/empty_flower_pot",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 2
     }
   ]
 }
