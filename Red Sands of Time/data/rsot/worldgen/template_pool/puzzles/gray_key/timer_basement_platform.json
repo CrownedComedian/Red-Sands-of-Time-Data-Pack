@@ -1,0 +1,15 @@
+{
+  "name": "rsot:puzzles/gray_key/timer_basement_platform",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rsot:puzzles/gray_key/timer_basement_platform",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}
