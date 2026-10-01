@@ -1,11 +1,11 @@
 {
-  "name": "rsot:destinations/gray_key",
+  "name": "rsot:puzzles/cyan_key/books/pile_of_4",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rsot:rooms/keys/gray_nonogram",
+        "location": "rsot:puzzles/cyan_key/decorations/books/pile_of_4_1",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
